@@ -1,0 +1,12 @@
+{
+  "asset": "Earth surface, city lights and clouds for the lunar Earth",
+  "license": "NASA imagery, public domain (credit requested: NASA Earth Observatory / Visible Earth)",
+  "verified": "2026-10-09",
+  "files": [
+    {"name": "world.200412.3x5400x2700.jpg", "title": "Blue Marble Next Generation, December 2004", "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74218/world.200412.3x5400x2700.jpg", "bytes": 1878742, "sha256": "3d38a8ecaceb1cdb51ced7f831e9ac18d261950049616feff6892efcae0dcc26"},
+    {"name": "BlackMarble_2016_3km.jpg", "title": "Black Marble 2016", "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_3km.jpg", "bytes": 8106233, "sha256": "230aac448ae68c358be433dd518888cccb3a85ccf66f7b44326441c324ad6725"},
+    {"name": "cloud_combined_2048.jpg", "title": "Visible Earth cloud cover", "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud_combined_2048.jpg", "bytes": 829367, "sha256": "daddaad84d7a33bbbc86cdda3f591099f57cee8607b7bcf3b67eb7e4f7a1c793"}
+  ],
+  "runtime": {"earth-day.res": "2048x1024 BPTC sRGB surface", "earth-extra.res": "2048x1024 BPTC: R cloud, G city lights, B water (derived from the surface colour)"},
+  "shading": "earth.gdshader; sun direction fitted to the original bake (tools/proj/earth_sun.gd), phase turned toward the seat"
+}

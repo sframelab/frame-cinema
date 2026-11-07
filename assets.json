@@ -1,0 +1,660 @@
+{
+ "schema": 1,
+ "version": "0.5.19",
+ "about": "Room data and prebuilt programs that live in the release download, not in git. Fill them in with: python tools/fetch_assets.py <FrameCinema installer>",
+ "files": {
+  "app/ambient-contact/room3-contact.res": {
+   "bytes": 179868,
+   "sha256": "736ad12201d5d3737549f8551ab28e052ed173da1ef5e351547a6a84494ed1d1"
+  },
+  "app/ambient-contact/room4-contact.res": {
+   "bytes": 153267,
+   "sha256": "f07fc4d333a12a0402cacdd71152b3b287c2c83435fdc4735a6fd0f6a8757850"
+  },
+  "app/ambient-contact/room6-contact.res": {
+   "bytes": 182758,
+   "sha256": "5ab8575dcd7c8ae6cf21428b955f3341ae84683c6cf640e00802a2915de20161"
+  },
+  "app/ambient_sampler": {
+   "bytes": 83184,
+   "sha256": "8aadda4cc21b4b8e6edede347b4de7cdc26a696a5b14b8fe24206ad1fc1f5a13",
+   "exec": true
+  },
+  "app/coast/coast_land_rocks_02-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "cd5c7990573c3adc293824dc2a7e24570a61f2455ff0f65387bd284ff8b9db1d"
+  },
+  "app/coast/coast_land_rocks_02-normal.res": {
+   "bytes": 22370017,
+   "sha256": "f073240dbcc2fa4d6d52dd9f18f8f34f8f99cdf8fd9248ffaff877be5cb830d5"
+  },
+  "app/coast/coast_line_02-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "3de7050fa5cfef9a741f95b8cee5b73f964560eb5018acd4de75b28b87d1d9b1"
+  },
+  "app/coast/coast_line_02-normal.res": {
+   "bytes": 22370017,
+   "sha256": "02957e3c5311e28f4b751b751a41139961d1f4e18a5732c3714976938316168f"
+  },
+  "app/coast/coast_rocks_03-albedo.res": {
+   "bytes": 1398498,
+   "sha256": "b510596fd67708d72432cf592206a2a0aa7cf41e6241c1cf57c5b83b624cb90a"
+  },
+  "app/coast/coast_rocks_03-normal.res": {
+   "bytes": 1398497,
+   "sha256": "1a9d54045803189e6af7c604c27b8752d96dcbdf64ee3f2b84d4d52d2bc424db"
+  },
+  "app/coast/coastal_cliff_04-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "a5dbd4724ce8c4892581913ff5825fad881a13d48e7d8dfe5055803efed788a2"
+  },
+  "app/coast/coastal_cliff_04-normal.res": {
+   "bytes": 5592801,
+   "sha256": "4d744f6913da918d400a3e0c30bf0c7a67efd332bb9d444229703c5fb11508c7"
+  },
+  "app/coast/foot-of-left-cliff-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "7140f9317fafb8dc6af26f0155356564fffa6fd1b309bf121e92bc360bc25ed1"
+  },
+  "app/coast/foot-of-left-cliff.bin": {
+   "bytes": 803808,
+   "sha256": "724369aba9f8c51c0e39761a89d4de93b66b7c5f3b8b856d0a7598c1713b1ae7"
+  },
+  "app/coast/foot-of-left-cliff.lod.res": {
+   "bytes": 488230,
+   "sha256": "19ef2bd7c2e94171d43c34ee8921fc77d8afa0fc2233d37d886607910aee2263"
+  },
+  "app/coast/ground-detail.res": {
+   "bytes": 5592801,
+   "sha256": "183e2380847135941813f69d2a6f534acbe113a2f6bc81d617b8dc3cebed3bc7"
+  },
+  "app/coast/left-headland-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "c8962a088ffb1657dfd39efafc7530cdf5c46b5a6b4a203067070d2d9ba94b45"
+  },
+  "app/coast/left-headland.bin": {
+   "bytes": 934272,
+   "sha256": "b605cbf83f1c7a931ea47a74811dcf20550cf0c94d5fa9657ac6b004f2b030d7"
+  },
+  "app/coast/left-headland.lod.res": {
+   "bytes": 567183,
+   "sha256": "f43cb0000450b80ef7ccd7082ca3f42bdcf5ce52a030706e6fb582244597ce46"
+  },
+  "app/coast/middle-ledge-contact-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "258fba0fc1e4ba9476211f0f8463fc4713bf1c67a2f3b26b27c61a236df72861"
+  },
+  "app/coast/middle-ledge-contact-normal.res": {
+   "bytes": 5592801,
+   "sha256": "b7de88f55a8df808773471096721421508340ab92d68204e8ab933b10d27f15f"
+  },
+  "app/coast/middle-ledge-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "056ed46dd98de2c3f8a452e5db7b71c5c5890067e17c5c68256e4b01d23ce1b6"
+  },
+  "app/coast/middle-ledge.bin": {
+   "bytes": 2259504,
+   "sha256": "4a4bec26fca152459e027ee70f9ebc95ef20b0d3b92ab7a7f2162ac40c82177c"
+  },
+  "app/coast/middle-ledge.contact": {
+   "bytes": 128292,
+   "sha256": "41830ff4626a27fc831efa691da5e2085beb27b3923abb6ebffc633d6f4e2914"
+  },
+  "app/coast/middle-ledge.lod.res": {
+   "bytes": 1434347,
+   "sha256": "f067056a7e7037d440dbaef23e4b6202f4fa840c228950237697754f36183dc6"
+  },
+  "app/coast/near-headland-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "3c9346b635a1cb1d46bbaf8f718c57ae7afe0dc4b3debaa068f1c361538d87de"
+  },
+  "app/coast/near-headland.bin": {
+   "bytes": 934272,
+   "sha256": "9ab248aa097242805cd3baac3a69aba6725df046b1e409e804993410ccb5656e"
+  },
+  "app/coast/near-headland.lod.res": {
+   "bytes": 570051,
+   "sha256": "6a0f3eeedd3a8319b519599c8411ba77c9e195cd4ae7b2e0c8e7e7fb28d1a021"
+  },
+  "app/coast/near-left-rocks-contact-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "1174326adec28497320850b5e876c8c1fa39f55be7691a70addfd63de92b38cc"
+  },
+  "app/coast/near-left-rocks-contact-normal.res": {
+   "bytes": 5592801,
+   "sha256": "ce9ae903b8bef44d8655409202c5c8472a44187a07e8cb49298b495ab6b7aa9a"
+  },
+  "app/coast/near-left-rocks-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "5c324a8176b157f3b57d7bde22f286d31d49edc93a0e397f8a278fbfeb7dde25"
+  },
+  "app/coast/near-left-rocks.bin": {
+   "bytes": 1624848,
+   "sha256": "bed05544ba358333de6b2e3e55eecfbb63acd2fcdf51142fcebfc59993dfcd09"
+  },
+  "app/coast/near-left-rocks.contact": {
+   "bytes": 95404,
+   "sha256": "cc1fd6cdeee94c985b628e0c871df4b815c1786af6996b689b8c3d6fd4fd0030"
+  },
+  "app/coast/near-left-rocks.lod.res": {
+   "bytes": 1027755,
+   "sha256": "08ae9b765a7d52220b2052c04a39009019dda78aa674a3604620589f64a0267d"
+  },
+  "app/coast/near-rear-rocks-contact-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "9fa754e986b859fe768d563a1ace2118e545d373715a2e29e47cb0953e4684c6"
+  },
+  "app/coast/near-rear-rocks-contact-normal.res": {
+   "bytes": 5592801,
+   "sha256": "c6da73e89f5751ef698ee88859e33e7aef439d68e3a2dee74e9694eb6d6bbe67"
+  },
+  "app/coast/near-rear-rocks-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "5b0e8d285146f2bfe4eabc3c80a2b71e7ac395cf692af5cf9b0ac229371c6b8c"
+  },
+  "app/coast/near-rear-rocks.bin": {
+   "bytes": 1624044,
+   "sha256": "a59798a190002585d0c3a7ba076a9eb665e5874e22c4e37b99fe82ed553c0a32"
+  },
+  "app/coast/near-rear-rocks.contact": {
+   "bytes": 95336,
+   "sha256": "3c5db92386f978fac7705008d553be586a95e80e1c2494418a952a025f0c777a"
+  },
+  "app/coast/near-rear-rocks.lod.res": {
+   "bytes": 1033835,
+   "sha256": "62fb92fb08eb83fad5b4e3905afe5c3ea32977881d7437b4c3bbfeaf7c8e77ea"
+  },
+  "app/coast/outer-headland-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "f9379435667b062e247604e73b620eed09d09462e5ff445a1e764b2f0f904e69"
+  },
+  "app/coast/outer-headland.bin": {
+   "bytes": 618192,
+   "sha256": "57e3b2ca51e640c08c9689575b0ea870571b70a7eb042e8871c3cf423d37fc85"
+  },
+  "app/coast/outer-headland.lod.res": {
+   "bytes": 367763,
+   "sha256": "45da56b9e3adf6fdf68d40c9cb23c324902a46e31c2b57551c69c57235827542"
+  },
+  "app/coast/rear-ridge-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "68ac16c042c6bdaf7d675a5db3c180693663a721511578c9a3c0b99a6f13eed0"
+  },
+  "app/coast/rear-ridge.bin": {
+   "bytes": 1012668,
+   "sha256": "100dc64171b769557f81e239174009e197fe6df82b9f98a08bdccda6b8eccbe2"
+  },
+  "app/coast/rear-ridge.lod.res": {
+   "bytes": 619597,
+   "sha256": "f7cbee9a203be3f2c37dc7ba6b09b38ca396fd73c4c8d5b41cbdef2795eea31f"
+  },
+  "app/coast/rock-detail.res": {
+   "bytes": 5592801,
+   "sha256": "23c397f714b4a9fef77fc3714c79f6ea268efc74303ece30f5adf74a558c5736"
+  },
+  "app/coast/seat-cliff-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "a6c1e9fb9f000707a04975b786ff45fddd5c280db0b54a65b316e4ebac417972"
+  },
+  "app/coast/seat-cliff.bin": {
+   "bytes": 1012668,
+   "sha256": "b27eb438e8adc5326da8fb53f750007c97e1896da90ea85ccf06be4017696363"
+  },
+  "app/coast/seat-cliff.lod.res": {
+   "bytes": 619794,
+   "sha256": "f9fc8711688836559d23e9d57554e4562c9056fb5986ad847ed337158cea4e8e"
+  },
+  "app/coast/seat-ledge-contact-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "40ba159d715d3ecf380f9e1101b59320464ca2a902122e0af4bfd3204d56407a"
+  },
+  "app/coast/seat-ledge-contact-normal.res": {
+   "bytes": 5592801,
+   "sha256": "437ad1972a5a840fb7051e394fc2ad7fc58b88ea2349058c4ee2fd91010f7e92"
+  },
+  "app/coast/seat-ledge-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "70eef3c423ea9358b73efc8252f49adff758f090d832212392bcfe8554d8e589"
+  },
+  "app/coast/seat-ledge.bin": {
+   "bytes": 2764428,
+   "sha256": "2ecbc9943c2b2d5cdc6f54d88387e426e6b7514843777df2ac2e811000f232a5"
+  },
+  "app/coast/seat-ledge.contact": {
+   "bytes": 160368,
+   "sha256": "d1a741a536bc07ff2a38c0da3bc93d49f7cca5261a597c51c25fce110b1b7c02"
+  },
+  "app/coast/seat-ledge.lod.res": {
+   "bytes": 1810845,
+   "sha256": "64143e04ffc6ca8e21da608cdd5eff591855c326896ee2b7e9a450b081c22b00"
+  },
+  "app/coast/shore.png": {
+   "bytes": 78741,
+   "sha256": "6d1fbe601fc1b5ab7fef29cee4b9ec35cc28d9d91fb0f8d58b58561e3bfecddd"
+  },
+  "app/coast/sky.res": {
+   "bytes": 11185218,
+   "sha256": "297a8561ff3bb54a9ce53babd28ef509367a018a7f682f07734d0742635368a3"
+  },
+  "app/coast/water/contact-foam.bin": {
+   "bytes": 16777216,
+   "sha256": "626a4eb2bdcf91b6fd7c3d58e6e7161510fe335ec91d7c0b3a04baeb6d661b22"
+  },
+  "app/coast/water/displacement-0.bin": {
+   "bytes": 33554432,
+   "sha256": "d88680327ae1499eb9aae0ab7f1131d73c58ecd7f7c73027f5e9acc73ecab9d0"
+  },
+  "app/coast/water/normals-0.bin": {
+   "bytes": 33554432,
+   "sha256": "c513f35621401798ee83f51e21998c886220077b3f7bcfc69f20cfa360ce9f79"
+  },
+  "app/coast/water/normals-1.bin": {
+   "bytes": 33554432,
+   "sha256": "0a51284a7fd97a6495d4b20de5a763e82df4294d2ccd4f43e8974770361e3f2e"
+  },
+  "app/coast/waves.png": {
+   "bytes": 1120916,
+   "sha256": "8104fba905fb51dd32f348996d7066450b392159d5e4f8e966ae0da0858a93b5"
+  },
+  "app/controller_layer": {
+   "bytes": 82912,
+   "sha256": "827837d07803d2197e568be19c762dec570c0935edead2035e2d7842dc923aca",
+   "exec": true
+  },
+  "app/desert/contact-talus.bin": {
+   "bytes": 3617292,
+   "sha256": "9d28b02715bc83437ff7db5e32f344fa58c0d2821eefdccd81049e2d8ffbfd5e"
+  },
+  "app/desert/desert-dunes-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "44f8f19764c41572ad440d1e9a53a1068a55ef6843e05509bc19d377aa416ded"
+  },
+  "app/desert/desert-dunes-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "777589b8bd5a797df4381e59722c5c84dff613b13227c73de108056157ea4b61"
+  },
+  "app/desert/desert-dunes-normal.res": {
+   "bytes": 5592801,
+   "sha256": "4a970a98e069962eff1fd1ac26c2882137245d681346f8ea5db5cf7e6d075543"
+  },
+  "app/desert/desert-dunes.bin": {
+   "bytes": 4820868,
+   "sha256": "5063c0f50e8162ab913e2083f695523837b28ef69f68ce9211d533ac20ebf179"
+  },
+  "app/desert/east-shoulder-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "c19eb33e0f706d7f8221d40e860f5e0d40456d3be9fd6479af1ba1792c99e6b8"
+  },
+  "app/desert/east-shoulder.bin": {
+   "bytes": 1300620,
+   "sha256": "01a7fabc7fde363f127485944c6285b6b34df3bc24711f8e7558225654b53780"
+  },
+  "app/desert/eastern-mesa-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "9cf62dfd4c65a31f34b21a4c783d73f22e89be2351a12ab0743ec506dae6a411"
+  },
+  "app/desert/eastern-mesa.bin": {
+   "bytes": 388464,
+   "sha256": "abc84c39504764dc7b345ba10c2e5d9a542d523dbf40b82b614dfb5504e44971"
+  },
+  "app/desert/far-mesa-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "2e488e370e50883484bb1a9ddf8840adaa4fa14aed1c202a38dce685b240ee78"
+  },
+  "app/desert/far-mesa.bin": {
+   "bytes": 715968,
+   "sha256": "95a53046c745beaa1ea95a57efa28ebd992912914cbe3b547da689b1a5f50114"
+  },
+  "app/desert/left-talus-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "4ed246993056e0b1f81e301a3807ad9e72b1ddb7bdd091231a9fccae64118c1d"
+  },
+  "app/desert/left-talus.bin": {
+   "bytes": 575244,
+   "sha256": "18715a066fe9a375775212c78967adf6a823875ddd113ea8762975f04ff4f310"
+  },
+  "app/desert/namaqualand_boulder_05-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "54bbfcae6e3493d2f987e6e162649ab21e6bf41be1274388961e343a3a92f8c7"
+  },
+  "app/desert/namaqualand_boulder_05-normal.res": {
+   "bytes": 5592801,
+   "sha256": "d83df2d1361b83006d290904de89d1153ee5a992cfb5e62b192088e0433cb5a4"
+  },
+  "app/desert/namaqualand_cliff_01-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "8b84d54107aa9f99a5ea8777399b1ee42381c6616c5b2f09f0f577ca9273e80d"
+  },
+  "app/desert/namaqualand_cliff_01-normal.res": {
+   "bytes": 22370017,
+   "sha256": "4f84da0df2ca276be0ec0d091be88e16d8d7718393297e5626794dc6607a5bc3"
+  },
+  "app/desert/namaqualand_cliff_02-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "fed471ed54a1e9b8d2708f1498ccbded0ddcf59e0d14457b15ad8a3d4307ed9e"
+  },
+  "app/desert/namaqualand_cliff_02-normal.res": {
+   "bytes": 5592801,
+   "sha256": "005efd84e285f9848d814480735a99d04ca113444c0517c96376eff8cb274fd2"
+  },
+  "app/desert/rear-shelter-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "aad4b2a97ee7015d6e15c561e773722c536fbe9f9b1524f179682f851ba2e754"
+  },
+  "app/desert/rear-shelter.bin": {
+   "bytes": 2804892,
+   "sha256": "5562b667853320e662622d34603e405f4d016891375af3b54947b05ea2ba09a8"
+  },
+  "app/desert/rear-talus-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "7d23124f9c25d5dec232791edc0412cbc1a377e9e2390ba6bf39b96bbd9d62d8"
+  },
+  "app/desert/rear-talus.bin": {
+   "bytes": 314364,
+   "sha256": "1c3f54f0bfbcc123b07477c0249fb7f35b302e3175835a82841e8d0b5a445625"
+  },
+  "app/desert/ripple-detail.res": {
+   "bytes": 22370017,
+   "sha256": "1781bfed6bbc3f9383e6a0b5eb829bda6fab735c89e5d06a9d05eb015ac7a970"
+  },
+  "app/desert/sand-contact.res": {
+   "bytes": 1398497,
+   "sha256": "30a160d0cc779f3424c6f184bb97c4b36bcbae02830d4b910e8a854eb0097bb6"
+  },
+  "app/desert/sand-grain.res": {
+   "bytes": 22370017,
+   "sha256": "be9e077758353cba98af48b1868644832700f29900712547e5a78ab2270e504c"
+  },
+  "app/desert/sheltered-sand-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "98fdcba0c5f206e8ebf9be0bbbe4304bc0dc60185f20d213155266c51d31c295"
+  },
+  "app/desert/sheltered-sand-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "f25d82b76458aa3c2eb34630f209eeea65ed58dcd6c9db7e32b7105221562190"
+  },
+  "app/desert/sheltered-sand-normal.res": {
+   "bytes": 22370017,
+   "sha256": "a853e3f0027dd6f862b4091e00df55044b0a1b876fdc8abd852f331223345e30"
+  },
+  "app/desert/sheltered-sand.bin": {
+   "bytes": 1858620,
+   "sha256": "b1a36cd3c8cb258b148c50a946f05c96d5406eca3f69f6251e0055778ffb73d9"
+  },
+  "app/desert/sky.res": {
+   "bytes": 11185218,
+   "sha256": "6fc2c6a17282104e6e1a7084cf72f63d9ef040d734a352f7e7dcf56edaf336f9"
+  },
+  "app/desert/west-alcove-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "834023c1aeccb8a116ec91af9a51a367551ef502b723fc9000442f34cc50673b"
+  },
+  "app/desert/west-alcove.bin": {
+   "bytes": 1931388,
+   "sha256": "f85e15551fed7c6ac20f952ef46adfc9b9f24fa9d072e9806ee5028c29c2d021"
+  },
+  "app/godot": {
+   "bytes": 137953888,
+   "sha256": "3fcb80f4fe794e3859360eb641d8c41d8ffe2c2e54ba1981e55a76851d5ed1f4",
+   "exec": true
+  },
+  "app/lunar/128-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "a95c327bbea38371b9fee255831e28d825e492a8566022a278cb0fb8a5cc3458"
+  },
+  "app/lunar/32-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "53e632a11380646ccafc592da371b963fb55a4fa6311ab5df4ebf7c716e91049"
+  },
+  "app/lunar/32-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "28a11754eafda2940ec2af645340f0093ba2f37554b3642c3bbfe68a15eb0f4e"
+  },
+  "app/lunar/32-normal.res": {
+   "bytes": 5592806,
+   "sha256": "86b4cf7933310350e062c86f269e4c1e5c7b1ccdf1f0c90145f6cde623051206"
+  },
+  "app/lunar/512-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "a8e8094402dcf868a5568727137c23e36383ac34ae4e4b81dd9c9ad869b4995d"
+  },
+  "app/lunar/8-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "7e1d2071060de2660a7a9d30a1d7d7e27d87f2cb3461c056262c04259bab7e5d"
+  },
+  "app/lunar/8-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "1ddb1dc030f7c70ea7d5404f86296ebec9e70f2fc9fa3a54ef7757b946b721d9"
+  },
+  "app/lunar/8-normal.res": {
+   "bytes": 22370022,
+   "sha256": "3cb5e1ca4fdabc6ded576624c10fd97c066b365b7da116aacdc3c8af7c1e9996"
+  },
+  "app/lunar/earth-day.res": {
+   "bytes": 2796609,
+   "sha256": "6e6a4f983023474092ef9ff9822116dbd7caec27a0332621bf65ea6ef4cbb293"
+  },
+  "app/lunar/earth-extra.res": {
+   "bytes": 2796609,
+   "sha256": "2661e75b259187ac664b7532a1c49d1537b0ec2a6f3931fea7a68dd34a189b12"
+  },
+  "app/lunar/earth-lighting.res": {
+   "bytes": 175170,
+   "sha256": "1208d20e09320ee83cfe2bafea78db7b45da0ad2c3a7a4167dfb0d8864d0e4ee"
+  },
+  "app/lunar/earth.bin": {
+   "bytes": 331788,
+   "sha256": "c4e5637255a11dfac7ebc6bad50dfd478f86af42579bc48d236f1ffa883515d1"
+  },
+  "app/lunar/ground-128.bin": {
+   "bytes": 949764,
+   "sha256": "b3363d645b717d969aae069ce6988e7e240feeea534f52e518dcfbf4c1d7a7d7"
+  },
+  "app/lunar/ground-32.bin": {
+   "bytes": 1393932,
+   "sha256": "504404303be1caf91c45a5b2335d1eee5470a3961c316c9095c5448b4f76a0d6"
+  },
+  "app/lunar/ground-512.bin": {
+   "bytes": 937748,
+   "sha256": "939e0ff0520b28152b1ef33663b77b2ad4281805f1fc96f9905c5ceb3d40023f"
+  },
+  "app/lunar/ground-8.bin": {
+   "bytes": 2252844,
+   "sha256": "f2ffcc3d5e5b8c19fddb7b4148b5518d55d22b065387a7cffc03cbd085531fd0"
+  },
+  "app/lunar/rockblend-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "7c30b46d774ba14dc1130740d33007748facc78177c28b4d2a954016ca1e67da"
+  },
+  "app/lunar/rockblend-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "d0f0b34a6017e97a82916e099752e73a8cb4054a5ede07c9f5bdc27668c3ddf9"
+  },
+  "app/lunar/rockblend-normal.res": {
+   "bytes": 22370017,
+   "sha256": "4c5297554dc77e944ecafc08efca66b2bb5a72d486bf9439d1f1d84803aa83e9"
+  },
+  "app/lunar/rockblend.bin": {
+   "bytes": 2484936,
+   "sha256": "902142fe9fc9710660e43e5711b56deb4ce874da2a55e63266efc252d74a87ac"
+  },
+  "app/lunar/rocks-albedo.res": {
+   "bytes": 22370018,
+   "sha256": "e2d7bae712bf63fa5fcf1bf9c57b4eb46428befd3d97951ff355ef334d7e519d"
+  },
+  "app/lunar/rocks-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "7d373f19dc2eb42696885e69fe8eea5ec6cdce5631a1f9641b4f9665e629a6f9"
+  },
+  "app/lunar/rocks-normal.res": {
+   "bytes": 22370017,
+   "sha256": "b271ba63d7ae558ba828850661a7fc58f5b2fcf7ccc9730e4f91723b409d6c44"
+  },
+  "app/lunar/rocks.bin": {
+   "bytes": 8867208,
+   "sha256": "4bc15e9c601748c7552dbc4485d74eab71db3b1e392a64f24c15542e0a847636"
+  },
+  "app/native-ui/libframe_native_ui.so": {
+   "bytes": 970184,
+   "sha256": "8576358a2c12ca87599a0bbaa294c8f733fe867d27e27a0d70131d0b23166b66"
+  },
+  "app/native-ui/native_ui_renderer": {
+   "bytes": 79696,
+   "sha256": "ef70fdfbd367dab6d8662dc3f8f3d14d1dd1278bdf69be8cf37064b9fbdbeb5a",
+   "exec": true
+  },
+  "app/panel_host": {
+   "bytes": 7239160,
+   "sha256": "ba011a25cf1f767478288dfdaf3af8959caa5c0477d432c4c9621bacc3ab08e7",
+   "exec": true
+  },
+  "app/pose-sync/libframe_pose_sync.so": {
+   "bytes": 658192,
+   "sha256": "8dac1246a68d2830d68a425c95a9fd261efe4aacb833dda9f172765c10faff7e"
+  },
+  "app/scene-owner/libframe_scene_owner_broker.so": {
+   "bytes": 891416,
+   "sha256": "4f98a0b2dfec18cb4c90888fe133c311a67e57ede96506f3fedfefa3040463fa"
+  },
+  "app/starship/cities.dat": {
+   "bytes": 1363572,
+   "sha256": "de503de9e03cef33b69ab06110cdac55f8f7ec5824429953cc944ba7a8744407"
+  },
+  "app/starship/cloud-detail.res": {
+   "bytes": 699433,
+   "sha256": "35b1e4bb42fb67d9bd25457911479d3c3a60ee86815356a7b3e1857d40e3d950"
+  },
+  "app/starship/deck-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "49899c74e9a380a49cd5cdf3d00f8da785bb45b38b6de804fe90aff4d8c84a81"
+  },
+  "app/starship/deck-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "a7c7f408ee8e721ea68803eab5ba281a2386d9764606a00db04ce7868e4241ec"
+  },
+  "app/starship/deck-mirror.res": {
+   "bytes": 1547618,
+   "sha256": "6ece73116a72c499b67759839667f600c5225784bb2c9387c45a3892483dc369"
+  },
+  "app/starship/deck-wear.res": {
+   "bytes": 349921,
+   "sha256": "9e5bd95a945f722fe11fe327f1344072cb8092ac16762c30fb15a0df2c965671"
+  },
+  "app/starship/deck.bin": {
+   "bytes": 1488012,
+   "sha256": "20394ba91eb1b74383cc30924c9e6fac477900fa0826acd707549aab6ded973f"
+  },
+  "app/starship/detail-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "c74cb0817e4d6db1e4130a65044df1b987fc86ceb0323179d7982529f24863ea"
+  },
+  "app/starship/detail-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "50a23ff6f312b1e3b75238e82046edddb636a07f1ea3a9f66b9a3bf14ffed3b3"
+  },
+  "app/starship/detail.bin": {
+   "bytes": 669900,
+   "sha256": "67d133e188227ca44918d5371f3b31e78904ed9e0b3d80aec54312ea3423e5b3"
+  },
+  "app/starship/dust.res": {
+   "bytes": 11185286,
+   "sha256": "79e11b75da71ea9f2bed7da56158a1cd946941f8b9f358c4f72ebfdd97fca94c"
+  },
+  "app/starship/earth-clouds.res": {
+   "bytes": 31458753,
+   "sha256": "79af58ba6e36263e2eacb6df2b8d573383b90fdc68b8dea5d08b167c2fd36af6"
+  },
+  "app/starship/earth-masks.res": {
+   "bytes": 22370049,
+   "sha256": "43c9a207c48b76307a941da696628f76398617e84fee4e9dd9c080c701fbbc18"
+  },
+  "app/starship/earth-surface.res": {
+   "bytes": 5592833,
+   "sha256": "bb9bdff47f60f5bf2668db6ae650f5a2c48b686b44af5a7a19d86d0b9aa8f8b2"
+  },
+  "app/starship/emission-albedo.res": {
+   "bytes": 1398498,
+   "sha256": "9fb41bf34c432fc8809e3817b66fbb257039f03b33138e23870f2347175d598a"
+  },
+  "app/starship/emission-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "a3aa6b6594c142b1ca42d6a5e6344eb6f26832161b5c22ffc0f3e69b82baaa30"
+  },
+  "app/starship/emission.bin": {
+   "bytes": 130908,
+   "sha256": "2815e9e9e2af2259222e25eef814cccc43764db65614d83bc9f4de18fd6ab10d"
+  },
+  "app/starship/galaxy.res": {
+   "bytes": 5592834,
+   "sha256": "4b727c3378260c7ec394c95b62748b9b50bbf0e4b1261551af9b891367e3068a"
+  },
+  "app/starship/objects-atlas.res": {
+   "bytes": 2963265,
+   "sha256": "79aeb3a69cd92a652e1386927dd542292268a9eef6fc02ae393b5054634c2c2b"
+  },
+  "app/starship/objects.dat": {
+   "bytes": 337688,
+   "sha256": "0755f8781830324f6de3d15e63bd5689f2478a9cb8fccbf65970614534e516ba"
+  },
+  "app/starship/seating-albedo.res": {
+   "bytes": 1398498,
+   "sha256": "dec34951d6113875abb2cbaceca25970684f8f32717893d51c1dbfd0c394453b"
+  },
+  "app/starship/seating-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "c68b84ad5c2ca4f4ef73d090b02454337b27687d8e4c8e9cc9d0fa4adec66543"
+  },
+  "app/starship/seating.bin": {
+   "bytes": 883644,
+   "sha256": "4008a0ecb781a9e9b73138ff0a326ff5286869266bd5341a9a0de94f8cc20c80"
+  },
+  "app/starship/shell-albedo.res": {
+   "bytes": 5592802,
+   "sha256": "b37e2a337f9461f44eb7fe82c871e25decbdec6eee7485fa649666797d9ce2ee"
+  },
+  "app/starship/shell-lighting.res": {
+   "bytes": 22370018,
+   "sha256": "44d23e12f139a06d1bc471a586ae0af37c0535ce023909adaaff350e8cfd06fc"
+  },
+  "app/starship/shell.bin": {
+   "bytes": 1325340,
+   "sha256": "bb1a7f8b47e760c4c29a564a9759b270808f21b3e81647f2813b5d161ee24d20"
+  },
+  "app/starship/stars.dat": {
+   "bytes": 2657548,
+   "sha256": "789ddf29b310048199fb6e256f51f61d42a2a667610d25cd7ce8ea28fecce277"
+  },
+  "app/starship/trim-albedo.res": {
+   "bytes": 349922,
+   "sha256": "a73b597b415de2b0ba9e8003f920d1c2ca9529f7e40fd224435802934240bc44"
+  },
+  "app/starship/trim-lighting.res": {
+   "bytes": 1398498,
+   "sha256": "62206f14c056dd20ee7438d8a8211829ec1c4ee6bc3f05fbbb8cc79a9cd4af4a"
+  },
+  "app/starship/trim.bin": {
+   "bytes": 822684,
+   "sha256": "6fbd5332532cdae58c3038e70803d8c706ff8f171d30bcb2e506536247d2c8f1"
+  },
+  "app/starship/viewer-albedo.res": {
+   "bytes": 1398498,
+   "sha256": "5d018f55a0dca1efa5d46c9e05fbf17c91cdda3a2afe1de1dbbf8420578339d9"
+  },
+  "app/starship/viewer-lighting.res": {
+   "bytes": 5592802,
+   "sha256": "2e5d88298ea1115662b76d4b90912f5de1f545726b32761eedccc9f92f33a3d4"
+  },
+  "app/starship/viewer.bin": {
+   "bytes": 133620,
+   "sha256": "b7482426fdf74b5c2090b0ce0e1528fac1a326766e90a58f2cb95997b6629177"
+  },
+  "app/stereo/model/zipdepth.ncnn.bin": {
+   "bytes": 24568648,
+   "sha256": "99cf86a1feb296cf5bcad37b720567b9b81375005b1e0dc6a26149b86f2a7334"
+  },
+  "app/water-sync/libframe_water_sync.so": {
+   "bytes": 985720,
+   "sha256": "5c3765738f5529a8400f091b98fa4328f45acf3d1b1208cea801d3d1c7489a80"
+  }
+ }
+}

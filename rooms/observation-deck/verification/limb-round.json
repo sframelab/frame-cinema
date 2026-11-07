@@ -1,0 +1,289 @@
+{
+  "what": "A circle fitted to the Earth limb on the unit sphere, from sky-only renders in every direction; nothing about the shader geometry is used to find the limb",
+  "renders": {
+    "frames": 36,
+    "size_px": 2048,
+    "fov_deg": 90.0,
+    "yaw_step_deg": 30,
+    "pitches_deg": [
+      -50,
+      -20,
+      10
+    ],
+    "stars_and_galaxy": "off (no star mesh in this stage, galaxy_exposure 0), so no star can pass for the limb"
+  },
+  "shader_planet_direction": [
+    -0.3954,
+    -0.829,
+    -0.3954
+  ],
+  "expected_center_az_el_deg": [
+    -45.0,
+    -55.999
+  ],
+  "expected_radius_deg": 75.914,
+  "target_residual_deg": 0.1,
+  "shipped": {
+    "points": 41606,
+    "rejected": 0,
+    "surface_crossings_left_out": 83672,
+    "center": [
+      -0.39585,
+      -0.82862,
+      -0.39585
+    ],
+    "center_az_deg": -45.0,
+    "center_el_deg": -55.957,
+    "radius_deg": 76.2294,
+    "residual_rms_deg": 0.0013,
+    "residual_p99_deg": 0.0031,
+    "residual_max_deg": 0.005,
+    "limb_el_seen_deg": [
+      -47.8,
+      20.3
+    ],
+    "residual_by_az": [
+      {
+        "az": [
+          -180,
+          -150
+        ],
+        "points": 3869,
+        "mean_deg": 0.0001,
+        "max_abs_deg": 0.0034
+      },
+      {
+        "az": [
+          -150,
+          -120
+        ],
+        "points": 5147,
+        "mean_deg": -0.0004,
+        "max_abs_deg": 0.0045
+      },
+      {
+        "az": [
+          -120,
+          -90
+        ],
+        "points": 3317,
+        "mean_deg": -0.0005,
+        "max_abs_deg": 0.0041
+      },
+      {
+        "az": [
+          -90,
+          -60
+        ],
+        "points": 2664,
+        "mean_deg": 0.0003,
+        "max_abs_deg": 0.0041
+      },
+      {
+        "az": [
+          -60,
+          -30
+        ],
+        "points": 2355,
+        "mean_deg": 0.0012,
+        "max_abs_deg": 0.005
+      },
+      {
+        "az": [
+          -30,
+          0
+        ],
+        "points": 2660,
+        "mean_deg": 0.0003,
+        "max_abs_deg": 0.0037
+      },
+      {
+        "az": [
+          0,
+          30
+        ],
+        "points": 3319,
+        "mean_deg": -0.0005,
+        "max_abs_deg": 0.0038
+      },
+      {
+        "az": [
+          30,
+          60
+        ],
+        "points": 5147,
+        "mean_deg": -0.0004,
+        "max_abs_deg": 0.004
+      },
+      {
+        "az": [
+          60,
+          90
+        ],
+        "points": 3870,
+        "mean_deg": 0.0,
+        "max_abs_deg": 0.0034
+      },
+      {
+        "az": [
+          90,
+          120
+        ],
+        "points": 3077,
+        "mean_deg": 0.0003,
+        "max_abs_deg": 0.0034
+      },
+      {
+        "az": [
+          120,
+          150
+        ],
+        "points": 3108,
+        "mean_deg": 0.0004,
+        "max_abs_deg": 0.0033
+      },
+      {
+        "az": [
+          150,
+          180
+        ],
+        "points": 3073,
+        "mean_deg": 0.0003,
+        "max_abs_deg": 0.0032
+      }
+    ],
+    "method": "every shader default but limb_fall 0.708; fixed luma 110 on the outer flank of the razor line, which sits a little outside the geometric limb, and further where the rim is brighter"
+  },
+  "geometry": {
+    "points": 4064,
+    "rejected": 0,
+    "surface_crossings_left_out": 0,
+    "center": [
+      -0.39542,
+      -0.82903,
+      -0.39541
+    ],
+    "center_az_deg": -45.0,
+    "center_el_deg": -55.999,
+    "radius_deg": 75.9759,
+    "residual_rms_deg": 0.0042,
+    "residual_p99_deg": 0.0143,
+    "residual_max_deg": 0.0289,
+    "limb_el_seen_deg": [
+      -48.0,
+      20.0
+    ],
+    "residual_by_az": [
+      {
+        "az": [
+          -180,
+          -150
+        ],
+        "points": 382,
+        "mean_deg": -0.0011,
+        "max_abs_deg": 0.0153
+      },
+      {
+        "az": [
+          -150,
+          -120
+        ],
+        "points": 108,
+        "mean_deg": 0.002,
+        "max_abs_deg": 0.0239
+      },
+      {
+        "az": [
+          -120,
+          -90
+        ],
+        "points": 148,
+        "mean_deg": 0.0017,
+        "max_abs_deg": 0.0289
+      },
+      {
+        "az": [
+          -90,
+          -60
+        ],
+        "points": 492,
+        "mean_deg": 0.0005,
+        "max_abs_deg": 0.0121
+      },
+      {
+        "az": [
+          -60,
+          -30
+        ],
+        "points": 537,
+        "mean_deg": -0.0016,
+        "max_abs_deg": 0.013
+      },
+      {
+        "az": [
+          -30,
+          0
+        ],
+        "points": 507,
+        "mean_deg": 0.0004,
+        "max_abs_deg": 0.0148
+      },
+      {
+        "az": [
+          0,
+          30
+        ],
+        "points": 164,
+        "mean_deg": 0.0019,
+        "max_abs_deg": 0.0266
+      },
+      {
+        "az": [
+          30,
+          60
+        ],
+        "points": 111,
+        "mean_deg": 0.0011,
+        "max_abs_deg": 0.0276
+      },
+      {
+        "az": [
+          60,
+          90
+        ],
+        "points": 384,
+        "mean_deg": -0.0008,
+        "max_abs_deg": 0.0192
+      },
+      {
+        "az": [
+          90,
+          120
+        ],
+        "points": 424,
+        "mean_deg": -0.0001,
+        "max_abs_deg": 0.0188
+      },
+      {
+        "az": [
+          120,
+          150
+        ],
+        "points": 377,
+        "mean_deg": 0.0004,
+        "max_abs_deg": 0.0214
+      },
+      {
+        "az": [
+          150,
+          180
+        ],
+        "points": 430,
+        "mean_deg": 0.0003,
+        "max_abs_deg": 0.0252
+      }
+    ],
+    "method": "only the razor line drawn, even rim all round (twilight, night and city gain 0, sun on the planet centre, limb_fall 0.708); its peak by a parabola, which brightness cannot move"
+  },
+  "passes": true
+}

@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "revision": "2026-11-02-v7",
+  "name": "Observation Deck",
+  "geometry": "authored metre-scale 3D; no interior panorama",
+  "triangles": 84814,
+  "static_meshes": 7,
+  "source": "build_interior.py",
+  "files": {
+    "cities.dat": {
+      "bytes": 1363572,
+      "sha256": "de503de9e03cef33b69ab06110cdac55f8f7ec5824429953cc944ba7a8744407"
+    },
+    "cities.gdshader": {
+      "bytes": 7669,
+      "sha256": "50a5c6dc1f097c4b9a4cc1c0f656893d9bb4f5cc8b95b55ddd04d4fbfd49af58"
+    },
+    "cloud-detail.res": {
+      "bytes": 699433,
+      "sha256": "35b1e4bb42fb67d9bd25457911479d3c3a60ee86815356a7b3e1857d40e3d950"
+    },
+    "deck-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "49899c74e9a380a49cd5cdf3d00f8da785bb45b38b6de804fe90aff4d8c84a81"
+    },
+    "deck-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "a7c7f408ee8e721ea68803eab5ba281a2386d9764606a00db04ce7868e4241ec"
+    },
+    "deck-mirror.res": {
+      "bytes": 1547618,
+      "sha256": "6ece73116a72c499b67759839667f600c5225784bb2c9387c45a3892483dc369"
+    },
+    "deck-wear.res": {
+      "bytes": 349921,
+      "sha256": "9e5bd95a945f722fe11fe327f1344072cb8092ac16762c30fb15a0df2c965671"
+    },
+    "deck.bin": {
+      "bytes": 1488012,
+      "sha256": "20394ba91eb1b74383cc30924c9e6fac477900fa0826acd707549aab6ded973f"
+    },
+    "deck.gdshader": {
+      "bytes": 146,
+      "sha256": "346fa58b00f5cbb62f5cd96543e5b61067dc9045cff35b6fafccc72e4746b11e"
+    },
+    "deck_common.gdshaderinc": {
+      "bytes": 9913,
+      "sha256": "9be226a6e5d25882bf98a5031c7d78a046a4d1dd7d291e020d9c6cc994fc85fa"
+    },
+    "deck_field.gdshader": {
+      "bytes": 247,
+      "sha256": "6be61dba62816ffce01ce71934023516816d6d016f7c67d62e4fbf254c28e3f4"
+    },
+    "detail-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "c74cb0817e4d6db1e4130a65044df1b987fc86ceb0323179d7982529f24863ea"
+    },
+    "detail-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "50a23ff6f312b1e3b75238e82046edddb636a07f1ea3a9f66b9a3bf14ffed3b3"
+    },
+    "detail.bin": {
+      "bytes": 669900,
+      "sha256": "67d133e188227ca44918d5371f3b31e78904ed9e0b3d80aec54312ea3423e5b3"
+    },
+    "dust.res": {
+      "bytes": 11185286,
+      "sha256": "79e11b75da71ea9f2bed7da56158a1cd946941f8b9f358c4f72ebfdd97fca94c"
+    },
+    "earth-clouds.res": {
+      "bytes": 31458753,
+      "sha256": "79af58ba6e36263e2eacb6df2b8d573383b90fdc68b8dea5d08b167c2fd36af6"
+    },
+    "earth-masks.res": {
+      "bytes": 22370049,
+      "sha256": "43c9a207c48b76307a941da696628f76398617e84fee4e9dd9c080c701fbbc18"
+    },
+    "earth-surface.res": {
+      "bytes": 5592833,
+      "sha256": "bb9bdff47f60f5bf2668db6ae650f5a2c48b686b44af5a7a19d86d0b9aa8f8b2"
+    },
+    "emission-albedo.res": {
+      "bytes": 1398498,
+      "sha256": "9fb41bf34c432fc8809e3817b66fbb257039f03b33138e23870f2347175d598a"
+    },
+    "emission-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "a3aa6b6594c142b1ca42d6a5e6344eb6f26832161b5c22ffc0f3e69b82baaa30"
+    },
+    "emission.bin": {
+      "bytes": 130908,
+      "sha256": "2815e9e9e2af2259222e25eef814cccc43764db65614d83bc9f4de18fd6ab10d"
+    },
+    "galaxy.res": {
+      "bytes": 5592834,
+      "sha256": "4b727c3378260c7ec394c95b62748b9b50bbf0e4b1261551af9b891367e3068a"
+    },
+    "glow.gdshader": {
+      "bytes": 801,
+      "sha256": "bdbc7561d1d63201fc0b4b14ef42fca51e5274f44525f3d7fe01882306e31dbc"
+    },
+    "hull.gdshader": {
+      "bytes": 2809,
+      "sha256": "c65fddcee983466e4854f18b2de2da4a068022a5e4a665128de7e39b918aca74"
+    },
+    "objects-atlas.res": {
+      "bytes": 2963265,
+      "sha256": "79aeb3a69cd92a652e1386927dd542292268a9eef6fc02ae393b5054634c2c2b"
+    },
+    "objects.dat": {
+      "bytes": 337688,
+      "sha256": "0755f8781830324f6de3d15e63bd5689f2478a9cb8fccbf65970614534e516ba"
+    },
+    "objects.gdshader": {
+      "bytes": 4340,
+      "sha256": "21d7194f5162176957c168ecded1f513f3f89476f24eaf451ddc90a44d004ac9"
+    },
+    "seating-albedo.res": {
+      "bytes": 1398498,
+      "sha256": "dec34951d6113875abb2cbaceca25970684f8f32717893d51c1dbfd0c394453b"
+    },
+    "seating-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "c68b84ad5c2ca4f4ef73d090b02454337b27687d8e4c8e9cc9d0fa4adec66543"
+    },
+    "seating.bin": {
+      "bytes": 883644,
+      "sha256": "4008a0ecb781a9e9b73138ff0a326ff5286869266bd5341a9a0de94f8cc20c80"
+    },
+    "shell-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "b37e2a337f9461f44eb7fe82c871e25decbdec6eee7485fa649666797d9ce2ee"
+    },
+    "shell-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "44d23e12f139a06d1bc471a586ae0af37c0535ce023909adaaff350e8cfd06fc"
+    },
+    "shell.bin": {
+      "bytes": 1325340,
+      "sha256": "bb1a7f8b47e760c4c29a564a9759b270808f21b3e81647f2813b5d161ee24d20"
+    },
+    "space-source.json": {
+      "bytes": 43207,
+      "sha256": "51eb09b84712b9d8e21d6f71f93ce48d16ba76f819843981a3ae2eb04fe86ace"
+    },
+    "space.gdshader": {
+      "bytes": 23820,
+      "sha256": "bae80e21598ec2bd4f73c291775ab506e1e52e2205b0c279c5cb760b779c6d5e"
+    },
+    "stars.dat": {
+      "bytes": 2657548,
+      "sha256": "789ddf29b310048199fb6e256f51f61d42a2a667610d25cd7ce8ea28fecce277"
+    },
+    "stars.gdshader": {
+      "bytes": 3690,
+      "sha256": "e6fe32930c072d5a32c0494ddceff393b5f718dd186222dfc45613a25a2a10b1"
+    },
+    "starship.json": {
+      "bytes": 52168,
+      "sha256": "56c7f5bae50274aafc95dcb1ac73d34610ebeb51af595206b9270dfcb2c557d6"
+    },
+    "starship_room.gd": {
+      "bytes": 47065,
+      "sha256": "b069114dc48e9b63f5a439dd27cc7954788b3f762e88b57d9132e9b5db143e71"
+    },
+    "surround.gdshader": {
+      "bytes": 2372,
+      "sha256": "28a274f5de793410ae6f1b2944a441f254a5106bc7b32a6bdce33e8c32ef74df"
+    },
+    "trim-albedo.res": {
+      "bytes": 349922,
+      "sha256": "a73b597b415de2b0ba9e8003f920d1c2ca9529f7e40fd224435802934240bc44"
+    },
+    "trim-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "62206f14c056dd20ee7438d8a8211829ec1c4ee6bc3f05fbbb8cc79a9cd4af4a"
+    },
+    "trim.bin": {
+      "bytes": 822684,
+      "sha256": "6fbd5332532cdae58c3038e70803d8c706ff8f171d30bcb2e506536247d2c8f1"
+    },
+    "viewer-albedo.res": {
+      "bytes": 1398498,
+      "sha256": "5d018f55a0dca1efa5d46c9e05fbf17c91cdda3a2afe1de1dbbf8420578339d9"
+    },
+    "viewer-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "2e5d88298ea1115662b76d4b90912f5de1f545726b32761eedccc9f92f33a3d4"
+    },
+    "viewer.bin": {
+      "bytes": 133620,
+      "sha256": "b7482426fdf74b5c2090b0ce0e1528fac1a326766e90a58f2cb95997b6629177"
+    }
+  }
+}

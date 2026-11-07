@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "frame_water_sync_init"
+compatibility_minimum = "4.7"
+reloadable = false
+
+[libraries]
+linux.release.arm64 = "res://water-sync/libframe_water_sync.so"
+linux.debug.arm64 = "res://water-sync/libframe_water_sync.so"

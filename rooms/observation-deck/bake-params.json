@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "note": "Calibrated knobs for build_runtime.py; command-line flags override them. The installed room is the v7 bake.",
+  "bake": {
+    "k_night": 1.2,
+    "k_tw": 4.2426,
+    "k_limb": 8.4853,
+    "cam_gain": 0.0625,
+    "lamp_gain": 1.08,
+    "blue_gain": 0.5,
+    "fill_gain": 1.0,
+    "rear_shield": true,
+    "lens_gain": 0.35,
+    "shine_gain": 1.0,
+    "lens_emit_gain": 1.0,
+    "blue_emit_gain": 1.0,
+    "aft_fill_gain": 2.5,
+    "group_gains": [
+      {
+        "group": "deck",
+        "kind": "amber",
+        "gain": 0.25
+      },
+      {
+        "group": "deck",
+        "name": "foot-light pool",
+        "gain": 0.2
+      },
+      {
+        "group": "deck",
+        "name": "Screen-side sill spill",
+        "gain": 0.4
+      },
+      {
+        "group": "deck",
+        "name": "Corner console toe wash",
+        "gain": 0.3
+      },
+      {
+        "group": "deck",
+        "name": "Aft deck wash",
+        "gain": 2.5
+      },
+      {
+        "group": "deck",
+        "kind": "fill",
+        "gain": 0.6
+      },
+      {
+        "group": "deck",
+        "kind": "earth",
+        "gain": 0.7
+      },
+      {
+        "group": "seating",
+        "kind": "amber",
+        "gain": 0.3
+      },
+      {
+        "group": "seating",
+        "kind": "fill",
+        "gain": 2.5
+      },
+      {
+        "group": "seating",
+        "kind": "aft_fill",
+        "gain": 2.0
+      },
+      {
+        "group": "seating",
+        "name": "foot-light pool",
+        "gain": 0.4
+      },
+      {
+        "group": "seating",
+        "name": "Screen-side sill spill",
+        "gain": 0.15
+      },
+      {
+        "group": "seating",
+        "name": "Corner console toe wash",
+        "gain": 0.2
+      },
+      {
+        "group": "seating",
+        "name": "Aft wall lamp",
+        "gain": 0.3
+      },
+      {
+        "group": "seating",
+        "name": "Aft cabinet lamp",
+        "gain": 0.3
+      },
+      {
+        "group": "seating",
+        "name": "Aft ceiling slit spot",
+        "gain": 0.4
+      },
+      {
+        "group": "viewer",
+        "kind": "amber",
+        "gain": 0.3
+      },
+      {
+        "group": "viewer",
+        "kind": "fill",
+        "gain": 2.0
+      },
+      {
+        "group": "viewer",
+        "name": "foot-light pool",
+        "gain": 0.6
+      }
+    ]
+  },
+  "mirror": {
+    "split_emitters": true,
+    "env_gain": [
+      0.15,
+      0.18,
+      0.25
+    ],
+    "env_el": 6.0,
+    "env_az": 1.0,
+    "halo_gain": 0.05,
+    "halo_sigma": 10.0,
+    "floor_lat": 8.5,
+    "emit_clip": 1.5,
+    "height_lobes": true,
+    "lobe_el": 20.0,
+    "lobe_az": 4.0,
+    "el_min": 3.0,
+    "el_max": 3.5,
+    "az_max": 4.0,
+    "k_pow": 1.0,
+    "amber_gain": 2.0,
+    "amber_az_min": 0.35,
+    "high_gain": 2.3,
+    "core_gain": 0.3,
+    "core_scale": 0.35,
+    "k_floor": 0.05,
+    "el_floor": 0.5,
+    "blue_gain": 0.8,
+    "high_el_max": 3.0,
+    "high_az_max": 12.0,
+    "high_core_gain": 0.1,
+    "low_gain": 1.6,
+    "low_k": 0.3,
+    "low_el_max": 5.0,
+    "lamp_gains": [
+      {
+        "name": "Corner console lamp",
+        "gain": 0.3
+      }
+    ]
+  },
+  "runtime": {
+    "mirror_strength": 2.5,
+    "screen_gain": 1.2,
+    "glow_amber": 0.2475,
+    "glow_blue": 0.06,
+    "mirror_f0": 0.5,
+    "mirror_f90": 0.12,
+    "slit_glow": 0.65,
+    "blue_pool": 0.03,
+    "mirror_fresnel_pow": 1.5,
+    "sheen": [
+      0.009,
+      0.016,
+      0.036
+    ],
+    "wear_range": [
+      0.7,
+      1.2
+    ],
+    "sheen_albedo_ref": 0.035,
+    "bed_gloss": 0.6,
+    "screen_sheen": [
+      0.012,
+      0.014,
+      0.02
+    ]
+  }
+}

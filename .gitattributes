@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.ttf binary
+*.res binary
+*.bin binary
+*.dat binary
+*.contact binary
+*.blend binary
+*.exr binary
+*.so binary

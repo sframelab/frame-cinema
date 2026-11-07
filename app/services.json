@@ -1,0 +1,37 @@
+[
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "url": "https://www.netflix.com/browse",
+    "profile": "frame-cinema",
+    "color": "d72137"
+  },
+  {
+    "id": "hbomax",
+    "name": "HBO Max",
+    "url": "https://hbomax.com/login",
+    "profile": "frame-cinema-hbomax",
+    "color": "7975df"
+  },
+  {
+    "id": "disneyplus",
+    "name": "Disney+",
+    "url": "https://www.disneyplus.com/",
+    "profile": "frame-cinema-disneyplus",
+    "color": "29b7be"
+  },
+  {
+    "id": "primevideo",
+    "name": "Prime Video",
+    "url": "https://www.primevideo.com/",
+    "profile": "frame-cinema-primevideo",
+    "color": "00a8e1"
+  },
+  {
+    "id": "plex",
+    "name": "Plex",
+    "url": "https://app.plex.tv/desktop/",
+    "profile": "frame-cinema-plex",
+    "color": "e5a00d"
+  }
+]

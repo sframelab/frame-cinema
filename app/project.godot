@@ -1,0 +1,42 @@
+config_version=5
+
+[application]
+config/name="Frame Cinema"
+config/version="0.5.19"
+config/icon="res://branding/frame-cinema-512.png"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/use_custom_user_dir=true
+config/custom_user_dir_name="FrameCinema"
+config/project_settings_override="user://xr-foveation.cfg"
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0.012, 0.016, 0.025, 1)
+boot_splash/minimum_display_time=0
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+
+[rendering]
+renderer/rendering_method="mobile"
+anti_aliasing/quality/msaa_3d=1
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.012, 0.016, 0.025, 1)
+
+[shader_globals]
+earth_gain={
+"type": "float",
+"value": 1.0
+}
+earth_spin={
+"type": "vec2",
+"value": Vector2(0, 0)
+}
+
+[xr]
+openxr/enabled=true
+openxr/reference_space=0
+openxr/extensions/render_model=true
+openxr/foveation_level=0
+openxr/foveation_eye_tracked=false
+shaders/enabled=true

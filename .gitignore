@@ -1,0 +1,34 @@
+# Data files and programs from the release (see assets.json and tools/fetch_assets.py)
+/app/godot
+/app/panel_host
+/app/ambient_sampler
+/app/controller_layer
+/app/native-ui/native_ui_renderer
+*.so
+/app/coast/**/*.res
+/app/coast/**/*.bin
+/app/coast/**/*.contact
+/app/coast/**/*.png
+/app/desert/*.res
+/app/desert/*.bin
+/app/lunar/*.res
+/app/lunar/*.bin
+/app/starship/*.res
+/app/starship/*.bin
+/app/starship/*.dat
+/app/ambient-contact/
+/app/stereo/model/*.bin
+*.part
+
+# Godot's caches; only the pinned list of extensions is kept
+/app/.godot/*
+!/app/.godot/extension_list.cfg
+
+# Build output and scratch
+/build/
+/dist/
+/.local/
+__pycache__/
+*.pyc
+.env
+.env.*

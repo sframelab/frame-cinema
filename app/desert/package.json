@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "revision": "desert-contact-grain-0420-v1",
+  "license": "CC0-1.0",
+  "verified": "2026-10-02",
+  "sources": [
+    "https://polyhaven.com/a/namaqualand_cliff_01",
+    "https://polyhaven.com/a/namaqualand_cliff_02",
+    "https://polyhaven.com/a/namaqualand_boulder_05",
+    "https://polyhaven.com/a/sand_02",
+    "https://polyhaven.com/a/qwantani_dusk_2_puresky",
+    "https://polyhaven.com/a/aerial_beach_01"
+  ],
+  "triangles": 446716,
+  "static_triangles": 445948,
+  "drift_triangles": 768,
+  "texture_bytes": 268444582,
+  "files": {
+    "desert.json": {
+      "bytes": 54122,
+      "sha256": "d9dabce11744348ed5de69b7cce4bf343444de53edf0a996d82cba8556d139ac"
+    },
+    "sky.res": {
+      "bytes": 11185218,
+      "sha256": "6fc2c6a17282104e6e1a7084cf72f63d9ef040d734a352f7e7dcf56edaf336f9"
+    },
+    "west-alcove.bin": {
+      "bytes": 1931388,
+      "sha256": "f85e15551fed7c6ac20f952ef46adfc9b9f24fa9d072e9806ee5028c29c2d021"
+    },
+    "west-alcove-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "834023c1aeccb8a116ec91af9a51a367551ef502b723fc9000442f34cc50673b"
+    },
+    "rear-shelter.bin": {
+      "bytes": 2804892,
+      "sha256": "5562b667853320e662622d34603e405f4d016891375af3b54947b05ea2ba09a8"
+    },
+    "rear-shelter-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "aad4b2a97ee7015d6e15c561e773722c536fbe9f9b1524f179682f851ba2e754"
+    },
+    "east-shoulder.bin": {
+      "bytes": 1300620,
+      "sha256": "01a7fabc7fde363f127485944c6285b6b34df3bc24711f8e7558225654b53780"
+    },
+    "east-shoulder-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "c19eb33e0f706d7f8221d40e860f5e0d40456d3be9fd6479af1ba1792c99e6b8"
+    },
+    "left-talus.bin": {
+      "bytes": 575244,
+      "sha256": "18715a066fe9a375775212c78967adf6a823875ddd113ea8762975f04ff4f310"
+    },
+    "left-talus-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "4ed246993056e0b1f81e301a3807ad9e72b1ddb7bdd091231a9fccae64118c1d"
+    },
+    "rear-talus.bin": {
+      "bytes": 314364,
+      "sha256": "1c3f54f0bfbcc123b07477c0249fb7f35b302e3175835a82841e8d0b5a445625"
+    },
+    "rear-talus-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "7d23124f9c25d5dec232791edc0412cbc1a377e9e2390ba6bf39b96bbd9d62d8"
+    },
+    "far-mesa.bin": {
+      "bytes": 715968,
+      "sha256": "95a53046c745beaa1ea95a57efa28ebd992912914cbe3b547da689b1a5f50114"
+    },
+    "far-mesa-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "2e488e370e50883484bb1a9ddf8840adaa4fa14aed1c202a38dce685b240ee78"
+    },
+    "eastern-mesa.bin": {
+      "bytes": 388464,
+      "sha256": "abc84c39504764dc7b345ba10c2e5d9a542d523dbf40b82b614dfb5504e44971"
+    },
+    "eastern-mesa-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "9cf62dfd4c65a31f34b21a4c783d73f22e89be2351a12ab0743ec506dae6a411"
+    },
+    "sheltered-sand.bin": {
+      "bytes": 1858620,
+      "sha256": "b1a36cd3c8cb258b148c50a946f05c96d5406eca3f69f6251e0055778ffb73d9"
+    },
+    "sheltered-sand-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "f25d82b76458aa3c2eb34630f209eeea65ed58dcd6c9db7e32b7105221562190"
+    },
+    "sheltered-sand-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "98fdcba0c5f206e8ebf9be0bbbe4304bc0dc60185f20d213155266c51d31c295"
+    },
+    "sheltered-sand-normal.res": {
+      "bytes": 22370017,
+      "sha256": "a853e3f0027dd6f862b4091e00df55044b0a1b876fdc8abd852f331223345e30"
+    },
+    "desert-dunes.bin": {
+      "bytes": 4820868,
+      "sha256": "5063c0f50e8162ab913e2083f695523837b28ef69f68ce9211d533ac20ebf179"
+    },
+    "desert-dunes-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "777589b8bd5a797df4381e59722c5c84dff613b13227c73de108056157ea4b61"
+    },
+    "desert-dunes-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "44f8f19764c41572ad440d1e9a53a1068a55ef6843e05509bc19d377aa416ded"
+    },
+    "desert-dunes-normal.res": {
+      "bytes": 5592801,
+      "sha256": "4a970a98e069962eff1fd1ac26c2882137245d681346f8ea5db5cf7e6d075543"
+    },
+    "namaqualand_cliff_01-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "8b84d54107aa9f99a5ea8777399b1ee42381c6616c5b2f09f0f577ca9273e80d"
+    },
+    "namaqualand_cliff_01-normal.res": {
+      "bytes": 22370017,
+      "sha256": "4f84da0df2ca276be0ec0d091be88e16d8d7718393297e5626794dc6607a5bc3"
+    },
+    "namaqualand_cliff_02-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "fed471ed54a1e9b8d2708f1498ccbded0ddcf59e0d14457b15ad8a3d4307ed9e"
+    },
+    "namaqualand_cliff_02-normal.res": {
+      "bytes": 5592801,
+      "sha256": "005efd84e285f9848d814480735a99d04ca113444c0517c96376eff8cb274fd2"
+    },
+    "namaqualand_boulder_05-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "54bbfcae6e3493d2f987e6e162649ab21e6bf41be1274388961e343a3a92f8c7"
+    },
+    "namaqualand_boulder_05-normal.res": {
+      "bytes": 5592801,
+      "sha256": "d83df2d1361b83006d290904de89d1153ee5a992cfb5e62b192088e0433cb5a4"
+    },
+    "sand-grain.res": {
+      "bytes": 22370017,
+      "sha256": "be9e077758353cba98af48b1868644832700f29900712547e5a78ab2270e504c"
+    },
+    "sand-contact.res": {
+      "bytes": 1398497,
+      "sha256": "30a160d0cc779f3424c6f184bb97c4b36bcbae02830d4b910e8a854eb0097bb6"
+    },
+    "ripple-detail.res": {
+      "bytes": 22370017,
+      "sha256": "1781bfed6bbc3f9383e6a0b5eb829bda6fab735c89e5d06a9d05eb015ac7a970"
+    },
+    "contact-talus.bin": {
+      "bytes": 3617292,
+      "sha256": "9d28b02715bc83437ff7db5e32f344fa58c0d2821eefdccd81049e2d8ffbfd5e"
+    },
+    "desert_room.gd": {
+      "bytes": 9261,
+      "sha256": "abf23fbda664cb4116a57ba88b94d06799bfc2774cf86a3aa816f552ae138b1e"
+    },
+    "desert_rock.gdshader": {
+      "bytes": 1579,
+      "sha256": "9266e4f29d76fa770a96bf5f255d4ac671b695f981e66b69949a850976678409"
+    },
+    "desert_sand.gdshader": {
+      "bytes": 7916,
+      "sha256": "39b09fdd9933dda63fe881705ba858c17b6bfc98d41e06302c25d0f407e002c6"
+    },
+    "desert_sky.gdshader": {
+      "bytes": 1427,
+      "sha256": "e5f631a5492ea8c321102ada5efdd706a10be5aac4a789c5ccd593f15ee0e324"
+    },
+    "sand_drift.gdshader": {
+      "bytes": 1537,
+      "sha256": "d6691b66531fcfc9122628632756e959d5a03f3de57a3a47b88a2a1030a29ac5"
+    },
+    "desert_atmosphere.gdshaderinc": {
+      "bytes": 1034,
+      "sha256": "19651223b9c53a2da0de6ce61bfcadaf97ee6f5f0571c54761d74de0ea1bd37b"
+    },
+    "desert_debris.gdshader": {
+      "bytes": 1198,
+      "sha256": "996cca220c663acb0522acad276a81e2cf65eb0ee4e84428113c0f55315b0734"
+    }
+  },
+  "far_dune_radiance": {
+    "source": "dune-view-v11 bake folder (not included)",
+    "fallback": "runtime-v7 bake folder (not included)",
+    "geometry_sha256": "082bf967475b4fc01c40ebb8a659392c147704e3a023bbfa5b3bae90b1dbf6e4",
+    "raster": {
+      "subpixel_triangles": 7723,
+      "ambiguous_texels": 0,
+      "protected_subpixel_gutter_texels": 1116,
+      "max_overlap_distance_m": 3.911540025272054e-05
+    },
+    "mean_capture_weight": 0.06283126771450043,
+    "mostly_capture_fraction": 0.05974855367800827,
+    "mostly_fallback_fraction": 0.9335476580268962,
+    "depth_tolerance_m": "0.006 + range * 0.002",
+    "mode": "far 3D dunes only; seated radiance with exact source-ray visibility, opaque capture taps, valid axial depth, original bake fallback",
+    "limits": [
+      "single seated origin; no dynamic BRDF",
+      "near terrain and rock radiance remain unchanged"
+    ]
+  },
+  "detail": {
+    "physical_grain_width_m": 2.14,
+    "grain_source_sha256": "c6fcb9ec31757666d4449f1f6c6fb628c74867117936ebf5c4fb3571e4d643b5",
+    "contacts": 14986,
+    "debris_count": 320,
+    "seed": 42106133,
+    "max_deposit_height_m": 0.2399658309457349,
+    "fragment_triangles": 190,
+    "fragment_sha256": "7af3f30cef1ff55312886bc40133a9bc5c1ef22d9178fcc039d9d27f596161a8",
+    "ripple_field_width_m": 30.0,
+    "near_ripple_field_width_m": 7.5,
+    "near_ripple_fade_radius_m": [
+      6.0,
+      28.0
+    ],
+    "middle_ripple_field_width_m": 15.0,
+    "coarse_ripple_blend_radius_m": [
+      18.0,
+      70.0
+    ],
+    "sun_direction": [
+      -0.43591,
+      0.2234,
+      -0.87182
+    ],
+    "atmosphere": "shared sky radiance; fades beyond 20 m; follows room dimming",
+    "far_geometry": "authored asymmetric dunes; fixed directional dusk approximation",
+    "wind": "bounded kinematic saltation, not coupled grain/air simulation"
+  },
+  "surface_revision": "desert-light-depth-20261002",
+  "contact_lighting": {
+    "blender": "4.5.14 LTS",
+    "samples": 64,
+    "seconds": 30.68699999997625,
+    "source_sha256": "60d919f54165798adc1a7a6aed00563784f187d776be16fa7ce4d0f0b1c47835",
+    "geometry": {
+      "sheltered-sand.bin": "b26104aaec1f9bb9d6eb32ae25812c364f19a48754c43da68168179029cee197",
+      "desert-dunes.bin": "ad81adcfca71459c79b197f339bb14e82a67f144a4b687aef9b111dd368e0e1c",
+      "left-talus.bin": "fcf2ebd7cd884e0d65f886569d9adf5bde5e6f4fba3c20edc20e6bcb4a1cdb80",
+      "contact-talus.bin": "e8044911d0d783ba807b109f8f415404344681ff356cd18e56026fa522cf34e4"
+    },
+    "radiance_sha256": "1ea688d02abea440c4f320c11c0378aea1ce6180999957306b0123472fbf88f2"
+  },
+  "geometry_checks": {
+    "passed": true,
+    "checks": [
+      "far manifold and boundary-only open edges",
+      "non-degenerate triangles",
+      "near/far join within 2 mm",
+      "screen floor within 2 mm",
+      "bounded deposits",
+      "debris outside seat and screen",
+      "wind hops 4225 parameter phases",
+      "24960 wind samples above actual triangulated terrain"
+    ],
+    "far_triangles": 132950,
+    "near_max_deposit_m": 0.23923687636852264,
+    "floor_under_screen_max_change_m": 2.045184373855591e-06,
+    "wind_hop_range_m": [
+      0.007500000000000001,
+      0.09846213179687499
+    ],
+    "minimum_wind_actual_mesh_clearance_m": 0.0022230597903219185
+  },
+  "grain_revision": "sand-mineral-color-20261002",
+  "mineral_grain": {
+    "revision": "sand-mineral-color-20261002",
+    "source": "https://polyhaven.com/a/sand_02",
+    "source_sha256": "c6fcb9ec31757666d4449f1f6c6fb628c74867117936ebf5c4fb3571e4d643b5",
+    "source_license": "CC0",
+    "source_verification_date": "2026-10-01",
+    "generated": "2026-10-02",
+    "width": 4096,
+    "height": 4096,
+    "field_width_m": 2.14,
+    "encoding": "linear RGB reflectance multiplier / 2; alpha legacy high-pass grain",
+    "format": "BPTC RGBA with mipmaps",
+    "bytes": 22370017,
+    "sha256": "be9e077758353cba98af48b1868644832700f29900712547e5a78ab2270e504c"
+  }
+}

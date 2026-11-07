@@ -1,0 +1,1241 @@
+{
+  "asset": "Observation Deck turning orbital Earth, real Milky Way and real stars",
+  "verified": "2026-11-03",
+  "revision": "2026-11-03-sharp-merge",
+  "credit": "NASA Earth Observatory / Visible Earth; cloud image by Reto Stockli, NASA Goddard Space Flight Center",
+  "usage": "NASA imagery made available under NASA Images and Media Usage Guidelines; no NASA endorsement implied",
+  "usage_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "dataset_page": "https://science.nasa.gov/earth/earth-observatory/the-blue-marble-true-color-global-imagery-at-1km-resolution/",
+  "sources": [
+    {
+      "name": "world.200412.3x5400x2700.jpg",
+      "title": "Blue Marble Next Generation, December 2004",
+      "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74218/world.200412.3x5400x2700.jpg",
+      "bytes": 1878742,
+      "sha256": "3d38a8ecaceb1cdb51ced7f831e9ac18d261950049616feff6892efcae0dcc26"
+    },
+    {
+      "name": "BlackMarble_2016_3km.jpg",
+      "title": "Black Marble 2016",
+      "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_3km.jpg",
+      "bytes": 8106233,
+      "sha256": "230aac448ae68c358be433dd518888cccb3a85ccf66f7b44326441c324ad6725",
+      "used_for": "the part of the cap the 500 m tiles do not cover, the framing check and the check that the tiles sit in the right place"
+    },
+    {
+      "name": "cloud_combined_8192.tif",
+      "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud_combined_8192.tif",
+      "bytes": 35870468,
+      "sha256": "d137775d8966ab8d443fd5126dc6e7ad72072bc1ed50555c5818d221735daf0f",
+      "dimensions": [
+        8192,
+        4096
+      ]
+    },
+    {
+      "name": "BlackMarble_2016_A1_gray.jpg",
+      "title": "Black Marble 2016, grayscale, 500 m, tile A1, 180W-90W, 90N-0",
+      "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_A1_gray.jpg",
+      "bytes": 5906921,
+      "sha256": "4e5a1135eb97ffa17067128f278d329ccf8d8819f469c9c4a40ffda7b77c809b",
+      "dimensions": [
+        21600,
+        21600
+      ],
+      "used_for": "city lights (not shipped; prepare_earth.py --download-tiles fetches it and checks this hash)"
+    },
+    {
+      "name": "BlackMarble_2016_B1_gray.jpg",
+      "title": "Black Marble 2016, grayscale, 500 m, tile B1, 90W-0, 90N-0",
+      "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_B1_gray.jpg",
+      "bytes": 8388924,
+      "sha256": "19a3e114e0a3970577813ff54e81e60fe5f32b6c38148468625a8a02f594a33c",
+      "dimensions": [
+        21600,
+        21600
+      ],
+      "used_for": "city lights (not shipped; prepare_earth.py --download-tiles fetches it and checks this hash)"
+    },
+    {
+      "name": "ybsc5.gz",
+      "url": "http://tdc-www.harvard.edu/catalogs/ybsc5.gz",
+      "title": "Bright Star Catalogue, 5th Revised Ed. (Preliminary Version), Hoffleit D., Warren Jr W.H., Astronomical Data Center, NSSDC/ADC (1991); catalogue V/50 at CDS",
+      "bytes": 573921,
+      "sha256": "3dc44b1e90be8fbe5bcc7656032560f51275f985c7e3f783c9028e1838ec7bed",
+      "used_for": "every star at V 6.5 or brighter: position, V and B-V"
+    },
+    {
+      "name": "ybsc5.readme",
+      "url": "http://tdc-www.harvard.edu/catalogs/ybsc5.readme",
+      "title": "The readme of the same catalogue, CDS, 02-Nov-1995; the parser was checked against its column table",
+      "bytes": 11546,
+      "sha256": "6d2409d4cd36895fee43186fa1cd53fa4c8a512bb52e3dc864aef1c72543716e"
+    },
+    {
+      "name": "milkyway_2020_8k_gal.exr",
+      "title": "Deep Star Maps 2020, NASA/Goddard Space Flight Center Scientific Visualization Studio; Gaia DR2: ESA/Gaia/DPAC",
+      "url": "https://svs.gsfc.nasa.gov/4851",
+      "bytes": 125076308,
+      "sha256": "d319113f35e45f7f66f2844f088639cc07cda74a5049299a6098d41e2ade3d28",
+      "used_for": "the Milky Way strip"
+    },
+    {
+      "name": "starmap_2020_8k_gal.exr",
+      "title": "Deep Star Maps 2020, as above",
+      "url": "https://svs.gsfc.nasa.gov/4851",
+      "bytes": 160735772,
+      "sha256": "d70924422d3e0159764b16a19658784befcf73b97e06e5c16614860c1514bb58",
+      "used_for": "stars fainter than Yale, as peaks of starmap minus milkyway"
+    },
+    {
+      "name": "stars_extracted.npz",
+      "title": "The 200,000 peaks taken from those two maps, a derived working file",
+      "sha256": "2e202098af33e2013964bec3d0092da8ce8c892055e3816c74f5405f6441aff4"
+    },
+    {
+      "name": "cloud.W.2001210.21600x21600.png, cloud.E.2001210.21600x21600.png",
+      "title": "Blue Marble cloud hemispheres, 1 km",
+      "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud.W.2001210.21600x21600.png",
+      "bytes": [
+        210808929,
+        211800444
+      ],
+      "sha256": [
+        "d7a6b03bb54b8ba56f72af6d1d49f191a25c12e911c43739c900e893d10eb814",
+        "11eb1aaf8e6056b9aebc0de4894dc5ad8a21cbe8738c6ddc92e88701eb7e1b99"
+      ],
+      "used_for": "earth-clouds.res at 8192x2880 (build_cloud_belt.py). Fetched from an archive copy of that address; the terms were not re-read for these two files."
+    }
+  ],
+  "constants_godot_room_space": {
+    "axes": "x right, y up, -z forward; az = atan(x, -z), el = asin(y)",
+    "planet_direction": [
+      -0.3954,
+      -0.829,
+      -0.3954
+    ],
+    "planet_distance": 1.031,
+    "angular_radius_deg": 75.91,
+    "sub_viewer_direction": {
+      "az_deg": -45.0,
+      "el_deg": -56.0
+    },
+    "sun": [
+      -0.6725,
+      0.309,
+      -0.6725
+    ],
+    "sun_note": "74.0 deg from planet_direction at the same azimuth: 1.9 deg inside the disk edge, behind the limb at its highest point (az -45, el 19.9), which is the left edge of the front-left pane; never drawn",
+    "moon": [
+      -0.3478,
+      0.795,
+      0.4969
+    ],
+    "moon_color": [
+      0.022,
+      0.035,
+      0.075
+    ],
+    "twilight": "d2 = depth^2; inside_deg = d2*(108.17 + d2*(-215.83 + d2*338.51)), a fit within .07 deg over the band; tw = exp(-inside_deg/2.2)*(1-smoothstep(5,9,inside_deg))*exp(limb_fall*(dot(normal,sun)+.033))",
+    "galaxy_basis": {
+      "galaxy_x": [
+        0.13902,
+        0.9862,
+        -0.08954
+      ],
+      "galaxy_pole": [
+        -0.89189,
+        0.08545,
+        -0.44401
+      ],
+      "galaxy_z": [
+        0.43025,
+        -0.14162,
+        -0.89159
+      ],
+      "note": "A true great circle with the galactic centre at az 57, el 80, leaning 24 deg in the up view, with longitude falling upward; the 2026-11-02 basis turned by -24 deg about the up view, then slid -55 deg about the galactic pole. prepare_stars.py and prepare_objects.py read the same basis."
+    },
+    "bake_proxy": "build_runtime.py earth_proxy tests the same sphere with the room ray as it is and applies the same twilight fade (TWILIGHT_FADE_DEG); starship.json sky records planet_direction, planet_distance, sun and twilight_fade_deg, and check_integration.py compares them with this shader's defaults"
+  },
+  "cap_atlas": {
+    "projection": "azimuthal cap, radius 16 deg of surface angle, centred on n0; row 0 = +north; logarithmic radius r = ln(1 + rho/rho0)/ln(1 + 16/rho0); geographic angle = geo_scale x surface angle along the same bearing",
+    "size": [
+      2048,
+      2048
+    ],
+    "cap_radius_deg": 16.0,
+    "frame": {
+      "n0": [
+        0.395415,
+        0.829032,
+        0.395415
+      ],
+      "east": [
+        0.707107,
+        0.0,
+        -0.707107
+      ],
+      "north": [
+        -0.586214,
+        0.559201,
+        -0.586214
+      ],
+      "planet_direction": [
+        -0.3954,
+        -0.829,
+        -0.3954
+      ],
+      "planet_distance": 1.031
+    },
+    "shader_uv": "s = (dot(n,east), dot(n,north)); ang = atan(|s|, dot(n,n0)); uv = .5 + (s.x,-s.y)*ln(1 + ang/radians(2.5))/ln(7.4)*.5/max(|s|,1e-5)",
+    "sub_viewer": {
+      "lat": 37.0,
+      "lon": -69.0,
+      "heading_deg": -90.0,
+      "requested": [
+        37.0,
+        -69.0,
+        -90.0
+      ],
+      "alternates": [
+        [
+          36.0,
+          -69.0,
+          -85.0
+        ],
+        [
+          30.0,
+          -74.0,
+          -60.0
+        ]
+      ]
+    },
+    "sub_viewer_choice": "Round Earth pass: moving the centre to az -45 turned the whole atlas with it, so the sub-viewer and heading were picked again by a search over (lat, lon, heading) for lit strings in the hero window and the side panes, then from renders: 37.0N 69.0W, heading -90 (the view looks west from off the eastern seaboard, so north is to the right). The hero window shows the Mississippi and Ohio valley town networks (St Louis at az -33 el 13, Chicago just behind the housing edge at az -22 el 10), the next pane left Atlanta, New Orleans and Houston (az -54 to -60), and the pane after it the Florida peninsula and Havana (az -77 to -89). 30N 74W h-60 keeps the old hero within 0.75 deg of screen position at the median but leaves the side panes emptier and puts Atlanta, magnified, in a large hot blob low in the window (817 warm px against 195). The geography is real and unmirrored, and two runs give byte-identical PNGs.",
+    "checks": {
+      "37.0N -69.0E h-90": {
+        "view": {
+          "rect": [
+            100,
+            150,
+            460,
+            380
+          ],
+          "hit_fraction": 0.9778,
+          "city_maxima": 175,
+          "threshold": 0.35,
+          "u_range": [
+            0.5262,
+            0.6745
+          ],
+          "v_range": [
+            0.0495,
+            0.2822
+          ]
+        },
+        "mirror": {
+          "pixels": {
+            "London": [
+              1693.0,
+              1816.5
+            ],
+            "Rome": [
+              1629.1,
+              1977.4
+            ],
+            "Moscow": [
+              1988.2,
+              1710.8
+            ]
+          },
+          "cross": -40739.0
+        }
+      }
+    },
+    "final_view_check": {
+      "rect": [
+        100,
+        150,
+        460,
+        380
+      ],
+      "hit_fraction": 0.9778,
+      "city_maxima": 279,
+      "threshold": 0.35,
+      "u_range": [
+        0.5262,
+        0.6745
+      ],
+      "v_range": [
+        0.0495,
+        0.2822
+      ]
+    },
+    "mirror_assert": "London -> Rome -> Moscow cross product in atlas pixels (y down) must be negative; it is for every candidate",
+    "filter": "Catmull-Rom bicubic (a=-0.5), 16 taps, x wrapped, y clamped, 2x2 supersampled and box-averaged per atlas texel, chunks of atlas rows; masks derived after resampling",
+    "masks": {
+      "R": "cloud coverage (window ring densified by a second sample, unsharp-masked for relief)",
+      "G": "city lights from the 500 m tiles (threads and hubs, cubed by the shader, softened by a last small blur of the light; 3 km fallback outside the tiles)",
+      "B": "water estimate"
+    },
+    "surface": "sRGB source image",
+    "outputs_png_sha256": {
+      "earth-day.png": "07f8318e247544ca65399d83ecc3b83d11af302f8fce725ee16bf25c241c50b2",
+      "earth-extra.png": "52113530823ed8e2ceced3c27a287def777c98910a2b6fe793c335439ed1147a"
+    },
+    "rho0_deg": 2.5,
+    "geo_scale": 3.0,
+    "cloud_relief": {
+      "sharpen": 0.5,
+      "sigma_texels": 2.0
+    },
+    "cloud_second_sample": {
+      "sub_viewer": [
+        -50.0,
+        60.0,
+        -17.0
+      ],
+      "ring": [
+        0.5,
+        0.65
+      ],
+      "blend": "1 - (1 - cloud) * (1 - second * smoothstep(ring, atlas radius))",
+      "heading_note": "Heading -17: the hero window moved 17 deg round the limb with the centre, so this keeps the same cloud band across it. A cloud sample only; the geography is unaffected."
+    },
+    "city_lights": {
+      "mode": "lights",
+      "view_check_3km_mask": {
+        "rect": [
+          100,
+          150,
+          460,
+          380
+        ],
+        "hit_fraction": 0.9778,
+        "city_maxima": 175,
+        "threshold": 0.35,
+        "u_range": [
+          0.5262,
+          0.6745
+        ],
+        "v_range": [
+          0.0495,
+          0.2822
+        ]
+      },
+      "tiles": {
+        "BlackMarble_2016_A1_gray.jpg": {
+          "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_A1_gray.jpg",
+          "west_lon": -180.0,
+          "north_lat": 90.0,
+          "bytes": 5906921,
+          "sha256": "4e5a1135eb97ffa17067128f278d329ccf8d8819f469c9c4a40ffda7b77c809b"
+        },
+        "BlackMarble_2016_B1_gray.jpg": {
+          "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_B1_gray.jpg",
+          "west_lon": -90.0,
+          "north_lat": 90.0,
+          "bytes": 8388924,
+          "sha256": "19a3e114e0a3970577813ff54e81e60fe5f32b6c38148468625a8a02f594a33c"
+        }
+      },
+      "tile_size": 21600,
+      "tile_degrees": 90.0,
+      "fallback_3km_basemap": 0.02,
+      "covered_share_of_atlas": 0.8206,
+      "registration_correlation_with_3km": 0.9016,
+      "registration_min": 0.85,
+      "contrast": {
+        "sigma_texels": 1.5,
+        "floor": 0.2
+      },
+      "line_evidence": {
+        "length_texels": 12,
+        "directions": 12,
+        "statistic_top": 0.5,
+        "ramp": [
+          0.05,
+          0.3
+        ],
+        "keep_without_line": 0.12
+      },
+      "region": {
+        "sigma_texels": 12.0,
+        "ramp": [
+          0.015,
+          0.12
+        ],
+        "keep": 0.12
+      },
+      "threads": {
+        "gain": 1.6,
+        "soft_floor": 0.22
+      },
+      "fill": {
+        "level": 0.3,
+        "ramp": [
+          0.25,
+          0.9
+        ],
+        "sigma_texels": 3.0,
+        "ease": 3.0
+      },
+      "round_along_radius": {
+        "offset_texels": 0.7,
+        "side_weight": 0.2,
+        "gain": 1.3
+      },
+      "hub": {
+        "sigma_texels": 1.5,
+        "radius_texels": 10,
+        "power": 16.0,
+        "ramp": [
+          0.05,
+          0.35
+        ],
+        "round_offset_texels": 1.2,
+        "round_side_weight": 0.25,
+        "round_gain": 1.25
+      },
+      "halo": {
+        "level": 0.12,
+        "sigma_texels": 2.5
+      },
+      "note": "real light only, no random numbers: local contrast of the peak-leaning area statistic, weighted by line evidence and regional light, plus one hot core per bright area (see city_lights)",
+      "soften": {
+        "sigma_texels": 0.45,
+        "light_gain": 0.85,
+        "light_floor": 0.004
+      }
+    },
+    "city_filter": "Exact area coverage: every lit 500 m pixel lands in the atlas texel that holds its centre, weighted by its true area, and the sums are divided by the texel's geographic area (a texel covers 6-20 source pixels a side). The 3 km map fills the part of the cap outside the tiles, which only a viewer leaning low can see: 0.06% of the rays down to 12 deg below the horizon, none of those above it.",
+    "retired": "Shipped up to 0.5.11; prepare_earth.py --cap still builds it, but no runtime file comes from it now."
+  },
+  "galaxy": {
+    "file": "galaxy.res",
+    "size": [
+      4096,
+      1024
+    ],
+    "mapping": {
+      "u": "galactic longitude, lon = (u - .5)*360 deg, centre at u = .5",
+      "v": "sin(lat)/1.2 + .5 (row 0 = sin lat -0.6)",
+      "band_centre": "latitude 0"
+    },
+    "coupling": "The band is a true great circle: its path in the room is the shader's galaxy basis alone. prepare_stars.py reads the same basis; change it there, then rerun prepare_stars.py. Stored 1 / galaxy_exposure up.",
+    "source_map": {
+      "name": "milkyway_2020_8k_gal.exr",
+      "bytes": 125076308,
+      "sha256": "d319113f35e45f7f66f2844f088639cc07cda74a5049299a6098d41e2ade3d28"
+    },
+    "revision": "2026-11-03-cosmos",
+    "source": "NASA/Goddard SVS Deep Star Maps 2020, milkyway_2020_8k_gal, through prepare_dust.py: the smooth glow of unresolved stars at 3 deg, printed stars filled in from their surround, the edge following the map's own isophotes",
+    "scale": 5.3333,
+    "grade": {
+      "tint": [
+        0.5,
+        1.03,
+        2.25
+      ],
+      "exposure": 0.1875,
+      "level": 0.62,
+      "knee": 0.075,
+      "split_deg": [
+        3.0,
+        0.75
+      ],
+      "band_edge_sigma_b": 8.0,
+      "hue_gain": 1.6,
+      "black_off_steps": 0.5
+    },
+    "deterministic": "same map, same constants, same arrays; prepare_dust.py pins the source hash and two runs gave the same hashes"
+  },
+  "runtime": [
+    {
+      "file": "earth-surface.res",
+      "bytes": 5592833,
+      "sha256": "bb9bdff47f60f5bf2668db6ae650f5a2c48b686b44af5a7a19d86d0b9aa8f8b2",
+      "dimensions": [
+        4096,
+        1024
+      ],
+      "format": "BPTC RGBA UNORM (BC7)",
+      "gpu_bytes_with_mips": 5592464
+    },
+    {
+      "file": "earth-masks.res",
+      "bytes": 22370049,
+      "sha256": "43c9a207c48b76307a941da696628f76398617e84fee4e9dd9c080c701fbbc18",
+      "dimensions": [
+        8192,
+        2048
+      ],
+      "format": "BPTC RGBA UNORM (BC7)",
+      "gpu_bytes_with_mips": 22369680
+    },
+    {
+      "file": "earth-clouds.res",
+      "bytes": 31458753,
+      "sha256": "79af58ba6e36263e2eacb6df2b8d573383b90fdc68b8dea5d08b167c2fd36af6",
+      "dimensions": [
+        8192,
+        2880
+      ],
+      "format": "BPTC RGBA UNORM (BC7)",
+      "gpu_bytes_with_mips": 31458384
+    },
+    {
+      "file": "galaxy.res",
+      "bytes": 5592834,
+      "sha256": "4b727c3378260c7ec394c95b62748b9b50bbf0e4b1261551af9b891367e3068a",
+      "dimensions": [
+        4096,
+        1024
+      ],
+      "format": "BPTC RGB unsigned float (BC6H)",
+      "gpu_bytes_with_mips": 5592464
+    },
+    {
+      "file": "stars.dat",
+      "bytes": 2657548,
+      "sha256": "789ddf29b310048199fb6e256f51f61d42a2a667610d25cd7ce8ea28fecce277"
+    },
+    {
+      "file": "cloud-detail.res",
+      "bytes": 699433,
+      "sha256": "35b1e4bb42fb67d9bd25457911479d3c3a60ee86815356a7b3e1857d40e3d950",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "format": "RGTC R (BC4)",
+      "gpu_bytes_with_mips": 699064
+    },
+    {
+      "file": "cities.dat",
+      "bytes": 1363572,
+      "sha256": "de503de9e03cef33b69ab06110cdac55f8f7ec5824429953cc944ba7a8744407"
+    },
+    {
+      "file": "dust.res",
+      "bytes": 11185286,
+      "sha256": "79e11b75da71ea9f2bed7da56158a1cd946941f8b9f358c4f72ebfdd97fca94c",
+      "dimensions": [
+        8192,
+        1024
+      ],
+      "format": "RGTC RG (BC5)",
+      "gpu_bytes_with_mips": 11184917
+    },
+    {
+      "file": "objects.dat",
+      "bytes": 337688,
+      "sha256": "0755f8781830324f6de3d15e63bd5689f2478a9cb8fccbf65970614534e516ba"
+    },
+    {
+      "file": "objects-atlas.res",
+      "bytes": 2963265,
+      "sha256": "79aeb3a69cd92a652e1386927dd542292268a9eef6fc02ae393b5054634c2c2b",
+      "dimensions": [
+        2048,
+        1084
+      ],
+      "format": "BPTC RGBA UNORM (BC7)",
+      "gpu_bytes_with_mips": 2962896
+    }
+  ],
+  "gpu_bytes_total": 79859869,
+  "shader": {
+    "file": "space.gdshader",
+    "surface": "earth-surface.res (sRGB, BC7, repeat)",
+    "masks": "earth-masks.res (R city lights, squared by the shader, G water; BC7, repeat), sampled filter_linear_mipmap_anisotropic",
+    "galaxy": "galaxy.res (BC6H, repeat in u), the smooth glow",
+    "uniforms": {
+      "planet_direction": [
+        -0.3954,
+        -0.829,
+        -0.3954
+      ],
+      "planet_distance": 1.031,
+      "sun": [
+        -0.6725,
+        0.309,
+        -0.6725
+      ],
+      "earth_exposure": 1.25,
+      "twilight_gain": 4.0,
+      "galaxy_exposure": 0.1875,
+      "galaxy_x": [
+        0.13902,
+        0.9862,
+        -0.08954
+      ],
+      "galaxy_pole": [
+        -0.89189,
+        0.08545,
+        -0.44401
+      ],
+      "galaxy_z": [
+        0.43025,
+        -0.14162,
+        -0.89159
+      ],
+      "world_to_room": "inverse orthonormalized room basis",
+      "night_gain": 1.0,
+      "city_gain": 1.0,
+      "limb_fall": 8.0,
+      "sky_panel_noise": 0.0
+    },
+    "set_by_room": "starship_room.gd binds surface, masks, clouds, detail, galaxy and dust and sets world_to_room on recenter. earth_spin and earth_gain are global shader uniforms, so moving them does not re-render the radiance map. The room dimmer reaches neither the stars nor the Milky Way.",
+    "stars": {
+      "file": "stars.gdshader",
+      "mesh": "stars.dat (prepare_stars.py): direction chunks of small additive triangles in the transparent pass, depth test on, w = 0 clip position (true infinity), each triangle baked as directions, so the kernel is fixed in angle",
+      "fwhm_deg": {
+        "hero": 0.11,
+        "mid": 0.12,
+        "dust": 0.127
+      },
+      "kernel": "(1 - r^2)^7",
+      "eye_depth": "DEPTH_HERO, DEPTH_MID, DEPTH_DUST, 0 in this build; radians per eye; never negative",
+      "focus": "follows sqrt(earth_gain), the global"
+    },
+    "band": "a smooth glow seen through dust, in the fixed galactic basis: the dust, a soft hue-keeping black point before the grain, then a tone (TONE_TOP, TONE_KNEE, BAND_TINT). It follows earth_gain. The fetches sit below the Earth's coverage. Half a 10-bit step of panel-fixed noise stays on the Earth and in its glare; sky_panel_noise 1 extends it to the whole sky, for the head test",
+    "background": "true black: nothing behind the Milky Way and the stars",
+    "halo": "(0.9*exp(-e/.0010)*razor + 0.12*exp(-e/.008)*(.05,.28,1))*rim*(1-smoothstep(.04,.06,e)), e = max(edge,0), rim = .035+exp(limb_fall*(dot(limb_normal,sun)+.033)), razor = mix((.38,.66,1),(1,.42,.16),exp(26*(dot(limb_normal,sun)+.033)-e/.0006))",
+    "glare": "(.0003,.0008,.0022)*max(dot(ray,sun),0)^8*(1-coverage)",
+    "notes": "No TIME. AT_CUBEMAP_PASS returns black. Plain texture() on the cap atlas (anisotropic on masks); seam-safe textureGrad only on the galaxy. Added in the look pass: one log() for the cap radius, about a dozen ALU for the night shading, anisotropic filtering on the masks sampler (Earth branch only), one extra multiply per bright star. Removed: the bright-star bloom exp. Texture fetches per pixel unchanged. Final look pass: about 4 ALU for the grazing cloud fade (one dot, one smoothstep, one mix); constants changed (twilight colour and weight, cloud ramp, city curve and day cut-off, halo colours, star density and tint); texture fetches unchanged. Galaxy refit (2026-11-02 v7): constants only (basis, galaxy_exposure 120 -> 1.25 for the 100x stored scale); texture size, format, fetches and ALU unchanged. Night lights (2026-11-02 v8): pow(G, 2.2) became G*G*G, plus one mix, one smoothstep and one max for the colour and the level cap; no uniform, texture fetch or draw call added. Round Earth (2026-11-02 v9): removed the warp and the limb drop (one atan, one asin, two smoothsteps, a sine and a cosine, a length and a clamp per fragment); no fetch, uniform or texture byte added. Turning Earth (0.5.12): textureGrad on three belt maps and one atan in place of the cap atlas and its log; one exp for the air; one exp each for the band and the rim; normalize and cross replaced by constants; the fetches stop at edge .004. Real sky (0.5.12): the lattice stars and the navy fill left the shader; the stars are one mesh, stars.gdshader.",
+    "night_side": "moonlit = .4 + .6*max(dot(n, moon), 0); land (.12 + mix(grey, ground, .35))*moon_color*1.25, ocean (.0036,.0085,.0230), cloud tops (.024,.042,.110)*(.3 + .7*thick^2) with cloud = smoothstep(.12,.88,thick); times (1 - day); then the air: planet *= (sqrt(clear), clear, clear^2), planet += (.007,.016,.040)*(1-clear)*moonlit, clear = exp(-.10/(depth+.05))",
+    "twilight": "tw = exp(-max(inside,0)/3.5)*(1 - smoothstep(5, 9, inside))*max(.85, sun_side); band = (.08 + .92*cloud)*(.13,.31,.92)*tw*twilight_gain: clear ocean takes 8% of the band, so the limb reads deep blue with lit clouds on it",
+    "cities": "The lights are one mesh of points, cities.gdshader and cities.dat (prepare_cities.py): the ground geography run backwards with earth_spin, a round kernel fixed in angle, a cloud fetch in the vertex stage on the same shell as the sky. The size of a light is fixed by its own amplitude; its skirt reads the light before the dimmer of the room, so nothing changes shape while it fades and a metro keeps its glow in Focus. The map keeps only a low glow: city_glow .14, LOD 3 of the city channel, with the same air and night terms.",
+    "earth_geometry": "One rigid sphere: along = dot(center, ray), miss = length(center - along*ray), with ray the room ray as it is (world_to_room is orthonormal). Earth disk, halo, glare and twilight all use it.",
+    "clouds": "earth-clouds.res (R clouds, G a second cloud sample for the window ring; BC7, repeat) on a shell 19 km up (CLOUD_H): three taps, the cloud at a footprint of 1.41-1.91x, one a step toward the moon, one 3 mips up that sets the threshold, the tops and a soft low deck. cloud-detail.res (one channel, BC4) bites the edges of real cloud within 9 deg of the limb.",
+    "global_uniforms": {
+      "earth_spin": "vec2, turns of longitude for ground and clouds, wrapped to 0-1 and advanced by starship_room.gd every frame",
+      "earth_gain": "float, 1.0 at the default light and above, down to .55 at Focus, on a 15 s ramp from starship_room.gd",
+      "declared": "both in project.godot [shader_globals], and at run time by starship_room.gd declare_sky_globals() for stages whose project.godot has no such entry"
+    },
+    "airglow": "(.0020,.0078,.0030)*exp(-a*a*(a>0 ? 1 : .07))*clamp(1-1.2*rim,0,1)*(1-coverage), a = (e-.018)/.0016",
+    "dust": "dust.res (BC5, repeat in u), optical depth and fine grain, rows |sin b| < .3",
+    "objects": {
+      "file": "objects.gdshader",
+      "mesh": "objects.dat: star triangles and tangent-plane quads reading objects-atlas.res. Premultiplied alpha, so an object's dust hides what lies behind it",
+      "focus": "light follows earth_gain, stars sqrt(earth_gain); dust hides what it hides at any gain"
+    },
+    "field": "a faint field off the band, in the sky shader: at most one tiny star per cell of a cube grid on the galactic basis, at a hashed place, FWHM .138 deg, peak FIELD_LOW to FIELD_TOP, clumped by slow waves, following sqrt(earth_gain). No map and no triangle. Its positions are invented"
+  },
+  "rebuild_tools": [
+    "prepare_earth.py --belt --download-tiles  (defaults: GEO_SCALE 3, first view 37N 64W with room north at bearing -90). Makes earth-surface.png and earth-masks.png. Its 8192x2048 earth-clouds.png is not the shipped one",
+    "python -I build_cloud_belt.py <1 km folder> <maps>, from outside the data folder, and rename earth-clouds-8192x2880.png to earth-clouds.png",
+    "python make_cloud_tile.py --output <maps>  (the defaults are the shipped tile)",
+    "python -I prepare_dust.py --work <folder holding mw8kgal.npy, band_stars.npz> --out <dir>, then pack_final.gd twice: galaxy.raw 4096 1024 glow galaxy.res, dust.raw 8192 1024 dust dust.res. Writes lane_field.npy and shown_glow.npy for the star mesh",
+    "python -I prepare_mw_peaks.py, once, then python -I prepare_stars.py  (reads Yale, stars_extracted.npz, open_sky.npz, mw_peaks.npz, lane_field.npy, shown_glow.npy; each pinned by hash)",
+    "prepare_objects.py --stage <stage>  (objects.dat and objects-atlas.res, after stars.dat, because it drops doubles of it; its volume tools and cached sprites are kept outside the app folder)",
+    "python -I prepare_cities.py  (writes cities.dat into project/starship)",
+    "godot --headless --path <stage> --script <abs>/pack_earth.gd -- --input <maps> --output <dir> --mode belt",
+    "copy earth-surface.res, earth-masks.res, earth-clouds.res, cloud-detail.res and galaxy.res into project/starship (the receipt stays next to the inputs)",
+    "verify_limb.py  (sky-only renders in every direction, a circle fitted to the limb on the unit sphere; writes verification/limb-round.json)"
+  ],
+  "stars": {
+    "file": "stars.dat",
+    "revision": "2026-11-03-cosmos",
+    "source": "Yale, stars_extracted peaks, mw_peaks",
+    "receipt": {
+      "counts": {
+        "yale_rows": 9096,
+        "yale_stars_after_merging": 8935,
+        "yale_rows_merged": 161,
+        "map_peaks": 200000,
+        "map_peaks_on_a_yale_star": 1189,
+        "map_peaks_used": 190614
+      },
+      "limit": 7.62236903912461,
+      "catalogue": 19569,
+      "band_real_extra": 4080,
+      "lane_dropped": 1705,
+      "clouds": 18000,
+      "dust": 22000,
+      "brightest": [
+        {
+          "star": "HR 2491 9Alp CMa",
+          "v": -1.46,
+          "amp": 1.4,
+          "az": -161.0,
+          "el": -34.9,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 2326 Alp Car",
+          "v": -0.72,
+          "amp": 1.4,
+          "az": -178.7,
+          "el": -2.6,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 5459 Alp1Cen",
+          "v": -0.29,
+          "amp": 1.4,
+          "az": -161.4,
+          "el": 53.5,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 5340 16Alp Boo",
+          "v": -0.04,
+          "amp": 1.4,
+          "az": -54.7,
+          "el": 24.0,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 7001 3Alp Lyr",
+          "v": 0.03,
+          "amp": 1.4,
+          "az": 7.8,
+          "el": 15.2,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 1708 13Alp Aur",
+          "v": 0.08,
+          "amp": 1.4,
+          "az": -19.1,
+          "el": -76.8,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 1713 19Bet Ori",
+          "v": 0.12,
+          "amp": 1.4,
+          "az": 173.0,
+          "el": -48.8,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 2943 10Alp CMi",
+          "v": 0.38,
+          "amp": 1.4,
+          "az": -129.8,
+          "el": -44.7,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 472 Alp Eri",
+          "v": 0.46,
+          "amp": 1.4,
+          "az": 143.9,
+          "el": 10.2,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 2061 58Alp Ori",
+          "v": 0.5,
+          "amp": 1.4,
+          "az": -163.4,
+          "el": -62.0,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 5267 Bet Cen",
+          "v": 0.61,
+          "amp": 1.4,
+          "az": -157.4,
+          "el": 49.8,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 4730 Alp1Cru",
+          "v": 0.73,
+          "amp": 1.4,
+          "az": -157.9,
+          "el": 38.1,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 7557 53Alp Aql",
+          "v": 0.77,
+          "amp": 1.4,
+          "az": 40.3,
+          "el": 32.6,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 1457 87Alp Tau",
+          "v": 0.85,
+          "amp": 1.3658,
+          "az": 145.8,
+          "el": -72.3,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 6134 21Alp Sco",
+          "v": 0.96,
+          "amp": 1.2934,
+          "az": -62.9,
+          "el": 79.8,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 5056 67Alp Vir",
+          "v": 0.98,
+          "amp": 1.2806,
+          "az": -90.4,
+          "el": 35.2,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 2990 78Bet Gem",
+          "v": 1.14,
+          "amp": 1.1831,
+          "az": -97.8,
+          "el": -55.4,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 8728 24Alp PsA",
+          "v": 1.16,
+          "amp": 1.1714,
+          "az": 104.2,
+          "el": 17.1,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 7924 50Alp Cyg",
+          "v": 1.25,
+          "amp": 1.1204,
+          "az": 24.3,
+          "el": -2.3,
+          "in_mesh": true
+        },
+        {
+          "star": "HR 4853 Bet Cru",
+          "v": 1.25,
+          "amp": 1.1204,
+          "az": -153.6,
+          "el": 40.7,
+          "in_mesh": true
+        }
+      ],
+      "basis": {
+        "galaxy_x": [
+          0.13902,
+          0.9862,
+          -0.08954
+        ],
+        "galaxy_pole": [
+          -0.89189,
+          0.08545,
+          -0.44401
+        ],
+        "galaxy_z": [
+          0.43025,
+          -0.14162,
+          -0.89159
+        ]
+      },
+      "stars": 55338,
+      "triangles": 55338,
+      "bytes": 2657548,
+      "chunks": 41,
+      "sha256": "789ddf29b310048199fb6e256f51f61d42a2a667610d25cd7ce8ea28fecce277",
+      "over": {
+        "0.0028": 55233,
+        "0.0065": 32550,
+        "0.012": 21860,
+        "0.03": 10101,
+        "0.05": 5994,
+        "0.1": 2092,
+        "0.135": 1222,
+        "0.25": 428,
+        "0.5": 89
+      },
+      "skirted": 159,
+      "amp_range": [
+        0.001001395465830039,
+        1.4
+      ]
+    },
+    "note": "Tiers: hero, mid and clouds, dust. Every star at V 6.5 or brighter comes from the Yale Bright Star Catalogue. Clouds and dust are real peaks of the NASA Milky Way map, at real places, thinned by the shown band (shown_glow.npy) and the lanes (lane_field.npy); their brightness comes from peak rank, not from real magnitudes, and their tints are an assigned spread. So only their positions are strictly real. Chunked by direction; the limb is baked."
+  },
+  "belt": {
+    "why": "The Earth should turn very slowly. The cap atlas ran out 1.9 deg past the horizon and could not turn; a wrapped latitude belt can turn for any number of hours.",
+    "projection": "wrapped longitude, u = lon/360 + .5; latitude -6 to 80, v = (sin(top) - sin(lat)) / (sin(top) - sin(bottom)); row 0 = north",
+    "sizes": {
+      "earth-surface": [
+        4096,
+        1024
+      ],
+      "earth-masks": [
+        8192,
+        2048
+      ],
+      "earth-clouds": [
+        8192,
+        2880
+      ]
+    },
+    "geo_scale": 3.0,
+    "first_view": {
+      "lat": 37.0,
+      "lon": -64.0,
+      "bearing_of_room_north_deg": -90.0
+    },
+    "turn": {
+      "deg_per_hour": 150.0,
+      "hours_per_turn": 2.4,
+      "clouds_times_ground": 1.08,
+      "direction": "true: surface moving east, ground comes out of the limb toward the viewer",
+      "clock": "Time.get_ticks_usec, so each launch opens on the first view",
+      "changed_2026_11_05": "0.5.15: 150 deg/h, five times 0.5.14's 30 and about ten times the true rate, after the 2026-11-04 test room. Only EARTH_DEG_PER_HOUR moved: the maps, size, limb, first view and the clouds' 1.08x are 0.5.14's.",
+      "speed_150_calc": {
+        "note": "calibration_turning_earth_2026_11_02.measured_pc_renders.speed_30_deg_h times five, by arithmetic, not measured",
+        "limb_el18": {
+          "deg_s": 0.02605,
+          "arcmin_s": 1.56,
+          "px_s_13": 0.34,
+          "px_s_31": 0.81,
+          "px_frame_31": 0.0112
+        },
+        "hero_el10": {
+          "deg_s": 0.05025,
+          "arcmin_s": 3.02,
+          "px_s_13": 0.65,
+          "px_s_31": 1.56,
+          "px_frame_31": 0.0216
+        },
+        "hero_el5": {
+          "deg_s": 0.0743,
+          "arcmin_s": 4.46,
+          "px_s_13": 0.97,
+          "px_s_31": 2.3,
+          "px_frame_31": 0.032
+        },
+        "hero_el0": {
+          "deg_s": 0.1023,
+          "arcmin_s": 6.14,
+          "px_s_13": 1.33,
+          "px_s_31": 3.17,
+          "px_frame_31": 0.044
+        },
+        "steep_el-25": {
+          "deg_s": 0.25875,
+          "arcmin_s": 15.52,
+          "px_s_13": 3.36,
+          "px_s_31": 8.02,
+          "px_frame_31": 0.1114
+        },
+        "nadir_el-56": {
+          "deg_s": 0.3578,
+          "arcmin_s": 21.47,
+          "px_s_13": 4.65,
+          "px_s_31": 11.09,
+          "px_frame_31": 0.1541
+        },
+        "left_az-85_el2": {
+          "deg_s": 0.1163,
+          "arcmin_s": 6.98,
+          "px_s_13": 1.51,
+          "px_s_31": 3.61,
+          "px_frame_31": 0.0501
+        },
+        "front_az-20_el5": {
+          "deg_s": 0.06385,
+          "arcmin_s": 3.83,
+          "px_s_13": 0.83,
+          "px_s_31": 1.98,
+          "px_frame_31": 0.0275
+        }
+      }
+    },
+    "frame": {
+      "n0": [
+        0.395415,
+        0.829032,
+        0.395415
+      ],
+      "east": [
+        0.707107,
+        0.0,
+        -0.707107
+      ],
+      "north": [
+        -0.586214,
+        0.559201,
+        -0.586214
+      ],
+      "planet_direction": [
+        -0.3954,
+        -0.829,
+        -0.3954
+      ],
+      "planet_distance": 1.031
+    },
+    "shader_constants": {
+      "geo_x": [
+        -0.263818,
+        0.540908,
+        0.798636
+      ],
+      "geo_y": [
+        -0.898794,
+        -0.438371,
+        0.0
+      ],
+      "geo_z": [
+        0.350099,
+        -0.717809,
+        0.601815
+      ],
+      "cap_n0": [
+        0.395415,
+        0.829032,
+        0.395415
+      ],
+      "cap_east": [
+        0.707107,
+        0.0,
+        -0.707107
+      ],
+      "cap_north": [
+        -0.586214,
+        0.559201,
+        -0.586214
+      ],
+      "belt_top": 0.984808,
+      "belt_scale": 0.91799
+    },
+    "city_lights": {
+      "tiles": {
+        "BlackMarble_2016_A1_gray.jpg": {
+          "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_A1_gray.jpg",
+          "west_lon": -180.0,
+          "north_lat": 90.0,
+          "bytes": 5906921,
+          "sha256": "4e5a1135eb97ffa17067128f278d329ccf8d8819f469c9c4a40ffda7b77c809b"
+        },
+        "BlackMarble_2016_B1_gray.jpg": {
+          "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144897/BlackMarble_2016_B1_gray.jpg",
+          "west_lon": -90.0,
+          "north_lat": 90.0,
+          "bytes": 8388924,
+          "sha256": "19a3e114e0a3970577813ff54e81e60fe5f32b6c38148468625a8a02f594a33c"
+        }
+      },
+      "fallback_3km_basemap": 0.02,
+      "feather_deg": 1.5,
+      "fallback_polar_cut_lat": [
+        70.0,
+        73.0
+      ],
+      "covered_share_of_belt": 0.4326,
+      "registration_correlation_with_3km": 0.8103,
+      "registration_min": 0.65,
+      "soften": {
+        "sigma_texels": 0.65,
+        "light_gain": 1.0,
+        "light_floor": 0.004
+      },
+      "wrap_padding_texels": 48
+    },
+    "cloud_relief": {
+      "sharpen": 0.5,
+      "sigma_texels": 2.0
+    },
+    "cloud_second_sample": {
+      "dlat": -13.0,
+      "dlon": 129.0
+    },
+    "not_covered_by_500m_tiles": "East of 0 and south of the equator stay on the 3 km map, with a 1.5 deg feather at the tile edges."
+  },
+  "credit_sky": "Yale Bright Star Catalogue, 5th revised ed. (Hoffleit and Warren). NASA/Goddard Space Flight Center Scientific Visualization Studio, Deep Star Maps 2020; Gaia DR2: ESA/Gaia/DPAC; Hipparcos and Tycho: ESA",
+  "usage_sky": "No NASA or ESA endorsement implied",
+  "dust": {
+    "file": "dust.res",
+    "revision": "2026-11-03-cosmos",
+    "size": [
+      8192,
+      1024
+    ],
+    "format": "RGTC RG (BC5)",
+    "source": "The same map through prepare_dust.py. R: optical depth from the real map by non-local means, lanes and knots at three scales, with a fixed-seed tear of up to about .2 deg; the big lanes stay real. G: clumps of real faint stars",
+    "mapping": {
+      "u": "as galaxy.res",
+      "v": "sin(lat)/.6 + .5 (rows |sin b| < .3)"
+    },
+    "shader": {
+      "depth": "(2.5 - 5 R) * DUST_DEPTH",
+      "DUST_DEPTH": 0.8,
+      "GRAIN_DEPTH": 3.0,
+      "TINT_DUST": [
+        0.8,
+        1.0,
+        1.22
+      ],
+      "GLOW_BLACK": 0.008798,
+      "order": "black point on the depth alone, then the grain",
+      "TONE_TOP": 1.17,
+      "TONE_KNEE": 0.017,
+      "BAND_TINT": [
+        0.6,
+        0.86,
+        1.08
+      ]
+    },
+    "note": "An unbound dust map reads black: no error, and the band goes bright. It is only read on rows |sin b| < .3."
+  },
+  "objects": {
+    "files": [
+      "objects.dat",
+      "objects.gdshader",
+      "objects-atlas.res"
+    ],
+    "revision": "2026-11-03-cosmos",
+    "source": "Procedural: numpy 3D volumes and Monte Carlo star clouds at real J2000 places. No image is sampled. The outline, knot places and cluster places of the Magellanic Clouds are real; individual stars are synthetic",
+    "catalog": [
+      {
+        "name": "carina",
+        "source": "numpy volume",
+        "half": 3.6,
+        "px": 640,
+        "level": 0.075
+      },
+      {
+        "name": "chicken",
+        "source": "numpy volume",
+        "half": 1.5,
+        "px": 288,
+        "level": 0.045
+      },
+      {
+        "name": "ngc3603",
+        "source": "numpy volume",
+        "half": 1.1,
+        "px": 224,
+        "level": 0.05
+      },
+      {
+        "name": "tuc47",
+        "source": "monte carlo, King profile",
+        "half": 0.85,
+        "px": 256,
+        "mesh_stars": 154
+      },
+      {
+        "name": "ngc362",
+        "source": "monte carlo, King profile",
+        "half": 0.3,
+        "px": 96,
+        "mesh_stars": 70
+      },
+      {
+        "name": "m4",
+        "source": "monte carlo, King profile",
+        "half": 0.55,
+        "px": 128,
+        "mesh_stars": 110
+      },
+      {
+        "name": "ngc6397",
+        "source": "monte carlo, King profile",
+        "half": 0.36,
+        "px": 96,
+        "mesh_stars": 80
+      },
+      {
+        "name": "ngc2808",
+        "source": "monte carlo, King profile",
+        "half": 0.24,
+        "px": 64,
+        "mesh_stars": 40
+      },
+      {
+        "name": "knots",
+        "source": "monte carlo star clouds and small numpy volumes",
+        "knots": 32
+      },
+      {
+        "name": "smc",
+        "source": "monte carlo star cloud, small numpy volumes for the knots",
+        "half": 4.6,
+        "px": 560,
+        "mesh_stars": 420
+      },
+      {
+        "name": "lmc",
+        "source": "monte carlo star cloud, small numpy volumes for the knots",
+        "half": 6.5,
+        "px": 640,
+        "mesh_stars": 560
+      },
+      {
+        "name": "lagoon",
+        "source": "numpy, from code",
+        "half": 1.7,
+        "px": 288
+      },
+      {
+        "name": "trifid",
+        "source": "numpy, from code",
+        "half": 0.8,
+        "px": 128
+      },
+      {
+        "name": "swan",
+        "source": "numpy, from code",
+        "half": 0.8,
+        "px": 128
+      },
+      {
+        "name": "eagle",
+        "source": "numpy, from code",
+        "half": 1.1,
+        "px": 160
+      },
+      {
+        "name": "m24",
+        "source": "numpy, from code",
+        "half": 2.6,
+        "px": 240
+      },
+      {
+        "name": "m22",
+        "source": "monte carlo, King profile",
+        "half": 0.62,
+        "px": 160,
+        "mesh_stars": 156
+      }
+    ],
+    "info": {
+      "quads": 48,
+      "stars": 4594,
+      "triangles": 4690,
+      "atlas_rows_used": 1074,
+      "mesh_bytes": 337688,
+      "atlas_bytes": 2963265
+    },
+    "atlas": {
+      "size": [
+        2048,
+        1084
+      ],
+      "format": "BPTC RGBA UNORM (BC7)"
+    },
+    "rose": "uniform rose in objects.gdshader: 1 keeps the real rose of the emission nebulae, 0 turns it blue-white; .5 in this build",
+    "basis": {
+      "galaxy_x": [
+        0.13902,
+        0.9862,
+        -0.08954
+      ],
+      "galaxy_pole": [
+        -0.89189,
+        0.08545,
+        -0.44401
+      ],
+      "galaxy_z": [
+        0.43025,
+        -0.14162,
+        -0.89159
+      ]
+    }
+  }
+}

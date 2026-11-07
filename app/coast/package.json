@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "revision": "coastal-dusk-v11-wave-optics",
+  "license": "CC0-1.0",
+  "sources": [
+    "https://polyhaven.com/a/coastal_cliff_04",
+    "https://polyhaven.com/a/coast_land_rocks_02",
+    "https://polyhaven.com/a/coast_line_02",
+    "https://polyhaven.com/a/coast_rocks_03",
+    "https://polyhaven.com/a/qwantani_dusk_2_puresky"
+  ],
+  "triangles": 409732,
+  "texture_bytes": 195741730,
+  "files": {
+    "coast.json": {
+      "bytes": 7151,
+      "sha256": "ff0c734b6f255d73dc9a72b46106e5454894adb5ef1c7317f3674e79a8c11f98"
+    },
+    "sky.res": {
+      "bytes": 11185218,
+      "sha256": "297a8561ff3bb54a9ce53babd28ef509367a018a7f682f07734d0742635368a3"
+    },
+    "shore.png": {
+      "bytes": 78741,
+      "sha256": "6d1fbe601fc1b5ab7fef29cee4b9ec35cc28d9d91fb0f8d58b58561e3bfecddd"
+    },
+    "waves.png": {
+      "bytes": 1120916,
+      "sha256": "8104fba905fb51dd32f348996d7066450b392159d5e4f8e966ae0da0858a93b5"
+    },
+    "seat-ledge.bin": {
+      "bytes": 2760108,
+      "sha256": "142748d77a58578a085c0b21eba481e19d7eedb209596928ef8d7d662d32e087"
+    },
+    "seat-ledge-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "e177992ca0e86e93658ce866b20c6229e6b7e6a7994b2ea3588d036c97345a15"
+    },
+    "middle-ledge.bin": {
+      "bytes": 2257932,
+      "sha256": "65fd0ff16158958571c49daa26faeec0030a75885588fb095a3a165df2eec782"
+    },
+    "middle-ledge-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "a7b403a8c1f43d618882e2b34ac58147d3061935d4d273e4c998baf8b599f1a5"
+    },
+    "near-left-rocks.bin": {
+      "bytes": 1622652,
+      "sha256": "b19600c6a9342425fe405a2d6b119fbecefd83711c6c82b8f44a45bd7fef8362"
+    },
+    "near-left-rocks-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "0dcfafc4317068bf02100d6ef778d5b837956edeb762c9f5d5bbccd278bc09f2"
+    },
+    "near-rear-rocks.bin": {
+      "bytes": 1622652,
+      "sha256": "ef810b90cc27c6a107adb16a70f1164f9c9b6619856220467212bb4be3b369ba"
+    },
+    "near-rear-rocks-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "614c98a29258c57472b6247f26acbc97052612c87ff0750cb2f610a03392c23c"
+    },
+    "seat-cliff.bin": {
+      "bytes": 1012668,
+      "sha256": "b27eb438e8adc5326da8fb53f750007c97e1896da90ea85ccf06be4017696363"
+    },
+    "seat-cliff-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "a6c1e9fb9f000707a04975b786ff45fddd5c280db0b54a65b316e4ebac417972"
+    },
+    "near-headland.bin": {
+      "bytes": 934272,
+      "sha256": "9ab248aa097242805cd3baac3a69aba6725df046b1e409e804993410ccb5656e"
+    },
+    "near-headland-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "3c9346b635a1cb1d46bbaf8f718c57ae7afe0dc4b3debaa068f1c361538d87de"
+    },
+    "left-headland.bin": {
+      "bytes": 934272,
+      "sha256": "b605cbf83f1c7a931ea47a74811dcf20550cf0c94d5fa9657ac6b004f2b030d7"
+    },
+    "left-headland-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "c8962a088ffb1657dfd39efafc7530cdf5c46b5a6b4a203067070d2d9ba94b45"
+    },
+    "outer-headland.bin": {
+      "bytes": 618192,
+      "sha256": "57e3b2ca51e640c08c9689575b0ea870571b70a7eb042e8871c3cf423d37fc85"
+    },
+    "outer-headland-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "f9379435667b062e247604e73b620eed09d09462e5ff445a1e764b2f0f904e69"
+    },
+    "rear-ridge.bin": {
+      "bytes": 1012668,
+      "sha256": "100dc64171b769557f81e239174009e197fe6df82b9f98a08bdccda6b8eccbe2"
+    },
+    "rear-ridge-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "68ac16c042c6bdaf7d675a5db3c180693663a721511578c9a3c0b99a6f13eed0"
+    },
+    "foot-of-left-cliff.bin": {
+      "bytes": 803808,
+      "sha256": "724369aba9f8c51c0e39761a89d4de93b66b7c5f3b8b856d0a7598c1713b1ae7"
+    },
+    "foot-of-left-cliff-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "7140f9317fafb8dc6af26f0155356564fffa6fd1b309bf121e92bc360bc25ed1"
+    },
+    "coast_land_rocks_02-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "cd5c7990573c3adc293824dc2a7e24570a61f2455ff0f65387bd284ff8b9db1d"
+    },
+    "coast_land_rocks_02-normal.res": {
+      "bytes": 22370017,
+      "sha256": "f073240dbcc2fa4d6d52dd9f18f8f34f8f99cdf8fd9248ffaff877be5cb830d5"
+    },
+    "coast_line_02-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "3de7050fa5cfef9a741f95b8cee5b73f964560eb5018acd4de75b28b87d1d9b1"
+    },
+    "coast_line_02-normal.res": {
+      "bytes": 22370017,
+      "sha256": "02957e3c5311e28f4b751b751a41139961d1f4e18a5732c3714976938316168f"
+    },
+    "coastal_cliff_04-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "a5dbd4724ce8c4892581913ff5825fad881a13d48e7d8dfe5055803efed788a2"
+    },
+    "coastal_cliff_04-normal.res": {
+      "bytes": 5592801,
+      "sha256": "4d744f6913da918d400a3e0c30bf0c7a67efd332bb9d444229703c5fb11508c7"
+    },
+    "coast_rocks_03-albedo.res": {
+      "bytes": 1398498,
+      "sha256": "b510596fd67708d72432cf592206a2a0aa7cf41e6241c1cf57c5b83b624cb90a"
+    },
+    "coast_rocks_03-normal.res": {
+      "bytes": 1398497,
+      "sha256": "1a9d54045803189e6af7c604c27b8752d96dcbdf64ee3f2b84d4d52d2bc424db"
+    },
+    "coast_room.gd": {
+      "bytes": 7876,
+      "sha256": "39d1374b35b8da28b41ac39229ffcc7e25971fa032f6c946972544f87b29a088"
+    },
+    "coast_rock.gdshader": {
+      "bytes": 1030,
+      "sha256": "6808181c33472ed37c142d10f6ecc657c6d5f25832ead197dd4416133b1ef0b5"
+    },
+    "coast_sky.gdshader": {
+      "bytes": 1392,
+      "sha256": "71b72c904eb7a6b9bcd5a3aa159ac955a3e3e4a3978dc5b9b7672ae59b3abde5"
+    },
+    "coast_water.gdshader": {
+      "bytes": 3990,
+      "sha256": "34f57a4985e2a0b025d4aacef65eec0403b0ada5ea066ae933cc449e13938ead"
+    },
+    "coastal_water.gd": {
+      "bytes": 8851,
+      "sha256": "c830eece2d4e17e81c95ac2e94bb3450392c468dd8ac827035ba9bec3e297300"
+    },
+    "water/contact-foam.bin": {
+      "bytes": 16777216,
+      "sha256": "626a4eb2bdcf91b6fd7c3d58e6e7161510fe335ec91d7c0b3a04baeb6d661b22"
+    },
+    "water/contact.json": {
+      "bytes": 1089,
+      "sha256": "de3da71ac15bc2dabfed63c9bcb424993e065d02ed78d1b8c8a8838a9bded064"
+    },
+    "water/displacement-0.bin": {
+      "bytes": 33554432,
+      "sha256": "d88680327ae1499eb9aae0ab7f1131d73c58ecd7f7c73027f5e9acc73ecab9d0"
+    },
+    "water/normals-0.bin": {
+      "bytes": 33554432,
+      "sha256": "c513f35621401798ee83f51e21998c886220077b3f7bcfc69f20cfa360ce9f79"
+    },
+    "water/normals-1.bin": {
+      "bytes": 33554432,
+      "sha256": "0a51284a7fd97a6495d4b20de5a763e82df4294d2ccd4f43e8974770361e3f2e"
+    },
+    "water/reflection_rock.gdshader": {
+      "bytes": 1725,
+      "sha256": "08598b08636a3aeababa708d25c6f99491cba707fbd61f7f335416328c415a33"
+    },
+    "water/spectral_water.gdshader": {
+      "bytes": 11355,
+      "sha256": "2e9150ddbaf6f1056f9c16d7a03a333116e0569f1024b9712aeb8d0e6daa39f7"
+    },
+    "water/spectrum.json": {
+      "bytes": 1182,
+      "sha256": "4856bb3b8e2e61e353a17bd1eea34281aac5c6b5e2322135b0668cbea5dee6a3"
+    }
+  }
+}

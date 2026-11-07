@@ -1,0 +1,50 @@
+extends SceneTree
+var failures := 0
+var checks := 0
+func check(value: bool, label: String) -> void:
+	checks += 1
+	if not value:
+		failures += 1
+		print("FAIL ",label)
+func _initialize() -> void:
+	var policy: RefCounted = load("res://viewing_idle.gd").new()
+	check(not policy.advance(0,true,false),"startup")
+	check(not policy.advance(.1,true,false),"eligible starts")
+	check(not policy.advance(9.9,true,false) and not policy.hidden,"before timeout")
+	check(policy.advance(10.2,true,false) and policy.hidden,"ten second focus and hide")
+	policy.touch(11)
+	check(not policy.hidden and not policy.advance(11,true,false),"button wakes")
+	policy.observe([{"id":1,"pose":Transform3D.IDENTITY}],12)
+	for i in 120:
+		var tiny := Transform3D(Basis.IDENTITY,Vector3(sin(i)*.001,0,0))
+		policy.observe([{"id":1,"pose":tiny}],12+i*.1)
+	check(policy.advance(24,true,false),"resting jitter does not prevent idle")
+	policy.observe([{"id":1,"pose":Transform3D(Basis.IDENTITY,Vector3(.03,0,0))}],24.05)
+	policy.observe([{"id":1,"pose":Transform3D.IDENTITY}],24.08)
+	check(policy.hidden,"one-sample tracking hiccup does not wake")
+	policy.observe([{"id":1,"pose":Transform3D(Basis.IDENTITY,Vector3(.02,0,0))}],24.1)
+	policy.observe([{"id":1,"pose":Transform3D(Basis.IDENTITY,Vector3(.025,0,0))}],24.13)
+	check(not policy.hidden,"deliberate movement wakes")
+	policy.observe([{"id":1,"pose":Transform3D(Basis(Vector3.UP,.10),Vector3(.025,0,0))}],24.97)
+	policy.observe([{"id":1,"pose":Transform3D(Basis(Vector3.UP,.11),Vector3(.025,0,0))}],25)
+	check(policy.last_activity==25,"rotation wakes")
+	policy.observe([{"id":1,"pose":Transform3D.IDENTITY,"pressed":true}],40)
+	check(not policy.advance(40,true,false),"held input keeps awake")
+	check(not policy.advance(60,false,false) and policy.hidden,"library and paused content never auto-focus")
+	check(not policy.advance(61,true,false),"new title gets full grace period")
+	check(not policy.advance(69,true,false),"no immediate focus after playback starts")
+	check(not policy.advance(80,true,true) and not policy.hidden,"dashboard or keyboard suspends timeout")
+	check(not policy.advance(81,true,false),"return gets fresh grace")
+	check(policy.advance(92,true,false),"timeout resumes")
+	policy.observe([{"id":1,"pose":Transform3D.IDENTITY}],92.5)
+	policy.observe([],93)
+	policy.observe([{"id":1,"pose":Transform3D(Basis.IDENTITY,Vector3(.04,0,0))}],93.5)
+	check(policy.advance(93.6,true,false) and policy.hidden,"resting controller reacquired nearby stays hidden")
+	policy.observe([],94)
+	policy.observe([{"id":1,"pose":Transform3D(Basis.IDENTITY,Vector3(.4,.2,0))}],95)
+	check(not policy.hidden,"controller moved while untracked wakes")
+	check(policy.advance(106,true,false),"timeout resumes again")
+	policy.observe([{"id":2,"pose":Transform3D.IDENTITY}],107)
+	check(not policy.hidden,"newly switched-on controller wakes")
+	print(JSON.stringify({"idle_checks":checks,"failures":failures}))
+	quit(1 if failures else 0)

@@ -1,0 +1,29 @@
+[
+  {
+    "sha256": "8D8A5F349A7678992E2822BF0088B4551B8978E040AB66B22EC4A5ADE50EF73B",
+    "id": "moonless_golf",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/moonless_golf.jpg",
+    "license": "CC0",
+    "author": "Greg Zaal",
+    "source": "https://polyhaven.com/a/moonless_golf",
+    "md5": "e7b15224feb4aec17bb543f8e67c26a0"
+  },
+  {
+    "sha256": "D916354D2AC1FD497FC80B230F0F36D2A95F9FC4C3E33C5FEDF344D6AEBCB2AF",
+    "id": "satara_night",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/satara_night.jpg",
+    "license": "CC0",
+    "author": "Greg Zaal",
+    "source": "https://polyhaven.com/a/satara_night",
+    "md5": "8c3bf649037c1adfc24c320fb4aad4a7"
+  },
+  {
+    "sha256": "6A7A946C4E448711A0D7A7F3AA630E9945AA9213AF2513ED7090885C3BD7F0CF",
+    "id": "spruit_sunrise",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/spruit_sunrise.jpg",
+    "license": "CC0",
+    "author": "Greg Zaal",
+    "source": "https://polyhaven.com/a/spruit_sunrise",
+    "md5": "a786eec836f18c760234fa1bf0c26295"
+  }
+]

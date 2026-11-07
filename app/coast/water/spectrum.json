@@ -1,0 +1,47 @@
+{
+  "size": 128,
+  "frames": 256,
+  "duration": 32,
+  "format": "RGBA16F little endian",
+  "bands": [
+    {
+      "length": 224,
+      "period": 4.8,
+      "significant_height": 0.52,
+      "min_wave": 8,
+      "max_wave": 160,
+      "direction": 0.4,
+      "seed": 317,
+      "spread": 6.0,
+      "opposing": 0.02,
+      "peak_enhancement": 1.6,
+      "cutoff_blend": 0.35,
+      "significant_height_range": [
+        0.5065717320594815,
+        0.5296688345435451
+      ],
+      "mean_slope": 0.030381858348846436,
+      "minimum_jacobian": 0.8779296875
+    },
+    {
+      "length": 29,
+      "period": 1.9,
+      "significant_height": 0.12,
+      "min_wave": 0.9,
+      "max_wave": 8,
+      "direction": 0.85,
+      "seed": 193,
+      "significant_height_range": [
+        0.11548213419968431,
+        0.12316519394579828
+      ],
+      "mean_slope": 0.05097496509552002,
+      "minimum_jacobian": 0.77880859375
+    }
+  ],
+  "loop_verified": true,
+  "finite_normals_verified": true,
+  "texture_bytes": 134217728,
+  "status": "private PC candidate; no Frame or physical acceptance",
+  "revision": "coastal-wind-0419-coastal-swell"
+}

@@ -1,0 +1,38 @@
+{
+  "size": 256,
+  "extent": 256.0,
+  "origin": [
+    -128.0,
+    -180.0
+  ],
+  "frames": 256,
+  "duration": 32,
+  "format": "R8 unorm foam density",
+  "model": "passive spectral-velocity advection and rock-impact source; no water height correction or bathymetry",
+  "lifetime": 2.4,
+  "dt": 0.0625,
+  "periodic_residual": 6.9227787513611356e-15,
+  "cycles": 3,
+  "maximum": 1.0,
+  "mean": 0.004117824602872133,
+  "bytes": 16777216,
+  "maximum_inversion_residual_m": 7.056057790247692e-07,
+  "sea_levels": [
+    -1.0,
+    -0.75,
+    -0.5,
+    -0.25,
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "input_sha256": {
+    "producer": "3ba99df49a43b3bff606fc75eeb31c9426b140cf70b9826828e8a20e0fcdcdb9",
+    "geometry_helpers": "b10d9dd9d58ca00680d0a2985255bbd7c57199cb7f8bc0282446f322da04461f",
+    "coast": "3dca6f9ba7d3acd8464d44a0f6819afc064db2a9b8bb824ed5e0fbe421a052e0",
+    "spectrum": "4856bb3b8e2e61e353a17bd1eea34281aac5c6b5e2322135b0668cbea5dee6a3",
+    "incident": "d88680327ae1499eb9aae0ab7f1131d73c58ecd7f7c73027f5e9acc73ecab9d0"
+  }
+}

@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "frame_pose_sync_init"
+compatibility_minimum = "4.7"
+reloadable = false
+
+[libraries]
+linux.release.arm64 = "res://pose-sync/libframe_pose_sync.so"
+linux.debug.arm64 = "res://pose-sync/libframe_pose_sync.so"

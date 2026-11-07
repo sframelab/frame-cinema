@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "source": "Poly Haven Lunar Landscape",
+  "source_url": "https://polyhaven.com/collections/moon",
+  "license": "CC0-1.0",
+  "triangles": 270962,
+  "texture_bytes": 242052260,
+  "files": {
+    "ground.json": {
+      "bytes": 9539,
+      "sha256": "f36dc2fec7f8d0b2dbb3f03029e710420c6b3aa4d59b23751318f939529a276b"
+    },
+    "props.json": {
+      "bytes": 1445,
+      "sha256": "c1f0dcda419b4cb5f77d2d2873f89040f270a3cb22051fc9bbf979225391b6b7"
+    },
+    "ground-8.bin": {
+      "bytes": 2252844,
+      "sha256": "f2ffcc3d5e5b8c19fddb7b4148b5518d55d22b065387a7cffc03cbd085531fd0"
+    },
+    "8-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "1ddb1dc030f7c70ea7d5404f86296ebec9e70f2fc9fa3a54ef7757b946b721d9"
+    },
+    "8-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "7e1d2071060de2660a7a9d30a1d7d7e27d87f2cb3461c056262c04259bab7e5d"
+    },
+    "8-normal.res": {
+      "bytes": 22370022,
+      "sha256": "3cb5e1ca4fdabc6ded576624c10fd97c066b365b7da116aacdc3c8af7c1e9996"
+    },
+    "ground-32.bin": {
+      "bytes": 1393932,
+      "sha256": "504404303be1caf91c45a5b2335d1eee5470a3961c316c9095c5448b4f76a0d6"
+    },
+    "32-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "28a11754eafda2940ec2af645340f0093ba2f37554b3642c3bbfe68a15eb0f4e"
+    },
+    "32-albedo.res": {
+      "bytes": 5592802,
+      "sha256": "53e632a11380646ccafc592da371b963fb55a4fa6311ab5df4ebf7c716e91049"
+    },
+    "32-normal.res": {
+      "bytes": 5592806,
+      "sha256": "86b4cf7933310350e062c86f269e4c1e5c7b1ccdf1f0c90145f6cde623051206"
+    },
+    "ground-128.bin": {
+      "bytes": 949764,
+      "sha256": "b3363d645b717d969aae069ce6988e7e240feeea534f52e518dcfbf4c1d7a7d7"
+    },
+    "128-lighting.res": {
+      "bytes": 5592802,
+      "sha256": "a95c327bbea38371b9fee255831e28d825e492a8566022a278cb0fb8a5cc3458"
+    },
+    "ground-512.bin": {
+      "bytes": 937748,
+      "sha256": "939e0ff0520b28152b1ef33663b77b2ad4281805f1fc96f9905c5ceb3d40023f"
+    },
+    "512-lighting.res": {
+      "bytes": 1398498,
+      "sha256": "a8e8094402dcf868a5568727137c23e36383ac34ae4e4b81dd9c9ad869b4995d"
+    },
+    "earth.bin": {
+      "bytes": 331788,
+      "sha256": "c4e5637255a11dfac7ebc6bad50dfd478f86af42579bc48d236f1ffa883515d1"
+    },
+    "earth-lighting.res": {
+      "bytes": 175170,
+      "sha256": "1208d20e09320ee83cfe2bafea78db7b45da0ad2c3a7a4167dfb0d8864d0e4ee"
+    },
+    "rocks.bin": {
+      "bytes": 8867208,
+      "sha256": "4bc15e9c601748c7552dbc4485d74eab71db3b1e392a64f24c15542e0a847636"
+    },
+    "rocks-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "7d373f19dc2eb42696885e69fe8eea5ec6cdce5631a1f9641b4f9665e629a6f9"
+    },
+    "rocks-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "e2d7bae712bf63fa5fcf1bf9c57b4eb46428befd3d97951ff355ef334d7e519d"
+    },
+    "rocks-normal.res": {
+      "bytes": 22370017,
+      "sha256": "b271ba63d7ae558ba828850661a7fc58f5b2fcf7ccc9730e4f91723b409d6c44"
+    },
+    "rockblend.bin": {
+      "bytes": 2484936,
+      "sha256": "902142fe9fc9710660e43e5711b56deb4ce874da2a55e63266efc252d74a87ac"
+    },
+    "rockblend-lighting.res": {
+      "bytes": 22370018,
+      "sha256": "d0f0b34a6017e97a82916e099752e73a8cb4054a5ede07c9f5bdc27668c3ddf9"
+    },
+    "rockblend-albedo.res": {
+      "bytes": 22370018,
+      "sha256": "7c30b46d774ba14dc1130740d33007748facc78177c28b4d2a954016ca1e67da"
+    },
+    "rockblend-normal.res": {
+      "bytes": 22370017,
+      "sha256": "4c5297554dc77e944ecafc08efca66b2bb5a72d486bf9439d1f1d84803aa83e9"
+    },
+    "lunar_room.gd": {
+      "bytes": 5496,
+      "sha256": "05a60b43d3dfceab25811854d4be6d9491fc347be398b5a1bb99e06d52e3f9c8"
+    },
+    "full_ground.gdshader": {
+      "bytes": 2123,
+      "sha256": "20246c2114aa9b718cca110dc5528252cbad5098b4ea17b9b577b2393d81a73b"
+    },
+    "rock_proof.gdshader": {
+      "bytes": 1261,
+      "sha256": "7d4218f6bbb7a8f6c886538ad3024354b2977f1d3d007e2189984fec79a5bb26"
+    },
+    "baked_prop.gdshader": {
+      "bytes": 265,
+      "sha256": "cdb20ff6c137d31b280a4a474541b51da35e1764af40950a33e958990bc8ad98"
+    }
+  },
+  "mesh_revision": "skyline-angular-error-0421"
+}

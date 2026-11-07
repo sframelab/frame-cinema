@@ -1,0 +1,39 @@
+{
+  "upstream": "91f3fd21e131641f51e8d35736d1958350180e3a",
+  "checkpoint": "zipdepth_base_npu.pth",
+  "checkpoint_sha256": "627c04fda584133ead4310074884a4a037061b4c01ba86e73e492ea30fab570d",
+  "width": 384,
+  "height": 224,
+  "input": "RGB float32 CHW 0..1; model normalizes",
+  "output": "relative inverse depth, larger is nearer",
+  "torch": "2.14.1+cpu",
+  "checks": [
+    {
+      "case": 0,
+      "max_error": 3.259629011154175e-07,
+      "mean_error": 1.7492741477553864e-08,
+      "relative_max": 3.2523694244446233e-06,
+      "finite": true
+    },
+    {
+      "case": 1,
+      "max_error": 1.3783574104309082e-07,
+      "mean_error": 4.9509122135305006e-08,
+      "relative_max": 4.00280032408773e-06,
+      "finite": true
+    },
+    {
+      "case": 2,
+      "max_error": 1.564621925354004e-07,
+      "mean_error": 5.122122459511047e-08,
+      "relative_max": 8.95476568985032e-06,
+      "finite": true
+    }
+  ],
+  "files": {
+    "zipdepth.ncnn.param": "db592e0d7d7eca38d9f1309caea8ed25d027305f9f500efb45f7ec01cbc9745b",
+    "zipdepth.ncnn.bin": "99cf86a1feb296cf5bcad37b720567b9b81375005b1e0dc6a26149b86f2a7334",
+    "fixture-rgb.f32": "a2b9a81809e9dbfe1d05c71d266b13afac2d763b947fcbe2eb766a6fc98a6b5d",
+    "fixture-depth.f32": "cdd182a45c74802bda592f1b2e09cd22a95ef0065fe3e70f62d0ab89defe47ae"
+  }
+}

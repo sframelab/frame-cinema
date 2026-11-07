@@ -1,0 +1,325 @@
+{
+ "schema": 1,
+ "source_sha256": "23ebb793b26cc0cca9518364cd5666ad0a5951db49293fa3f31cf6a3bde48672",
+ "parts": [
+  {
+   "name": "seat-ledge",
+   "asset": "coast_land_rocks_02",
+   "triangles": 70000,
+   "source_triangles": 1291146,
+   "resolution": 4096,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     1.4860397538473544,
+     0.0,
+     -0.3981831233059677
+    ],
+    [
+     -0.3981831233059677,
+     0.0,
+     -1.4860397538473546
+    ],
+    [
+     0.0,
+     1.5384615948919735,
+     0.0
+    ]
+   ],
+   "contact_overlay": false
+  },
+  {
+   "name": "middle-ledge",
+   "asset": "coast_line_02",
+   "triangles": 59999,
+   "source_triangles": 756940,
+   "resolution": 4096,
+   "fallback_tangent_corners": 1,
+   "source_normal_basis_columns": [
+    [
+     -1.6666666004392483,
+     0.0,
+     2.516596706173228e-07
+    ],
+    [
+     2.516596706173228e-07,
+     0.0,
+     1.6666666004392483
+    ],
+    [
+     0.0,
+     1.6666666004392863,
+     0.0
+    ]
+   ],
+   "contact_overlay": false
+  },
+  {
+   "name": "near-left-rocks",
+   "asset": "coast_land_rocks_02",
+   "triangles": 39999,
+   "source_triangles": 1291146,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     1.1702171914234385,
+     0.0,
+     0.8193948560062518
+    ],
+    [
+     0.8193948560062518,
+     0.0,
+     -1.1702171914234383
+    ],
+    [
+     0.0,
+     1.4285714528998554,
+     0.0
+    ]
+   ],
+   "contact_overlay": false
+  },
+  {
+   "name": "near-rear-rocks",
+   "asset": "coast_land_rocks_02",
+   "triangles": 40000,
+   "source_triangles": 1291146,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     -1.2947253680434332,
+     0.0,
+     -0.6037404177265889
+    ],
+    [
+     -0.6037404177265889,
+     0.0,
+     1.2947253680434332
+    ],
+    [
+     0.0,
+     1.4285714528998554,
+     0.0
+    ]
+   ],
+   "contact_overlay": false
+  },
+  {
+   "name": "seat-cliff",
+   "asset": "coastal_cliff_04",
+   "triangles": 24000,
+   "source_triangles": 1537429,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     -0.9999999999999923,
+     0.0,
+     8.74227765734752e-08
+    ],
+    [
+     8.74227765734752e-08,
+     0.0,
+     0.9999999999999925
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "near-headland",
+   "asset": "coastal_cliff_04",
+   "triangles": 21999,
+   "source_triangles": 1537429,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     0.27244111888397515,
+     0.0,
+     -1.0167640104453837
+    ],
+    [
+     -1.0167640104453837,
+     0.0,
+     -0.27244111888397515
+    ],
+    [
+     0.0,
+     1.0526315921561542,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "left-headland",
+   "asset": "coastal_cliff_04",
+   "triangles": 21999,
+   "source_triangles": 1537429,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     0.27244111888397515,
+     0.0,
+     -1.0167640104453837
+    ],
+    [
+     -1.0167640104453837,
+     0.0,
+     -0.27244111888397515
+    ],
+    [
+     0.0,
+     1.0526315921561542,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "outer-headland",
+   "asset": "coastal_cliff_04",
+   "triangles": 13999,
+   "source_triangles": 1537429,
+   "resolution": 1024,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     0.6623990707687957,
+     0.0,
+     -1.0600601121192594
+    ],
+    [
+     -1.0600601121192594,
+     0.0,
+     -0.6623990707687956
+    ],
+    [
+     0.0,
+     1.2499999813735487,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "rear-ridge",
+   "asset": "coastal_cliff_04",
+   "triangles": 24000,
+   "source_triangles": 1537429,
+   "resolution": 2048,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     -0.9090908893868878,
+     0.0,
+     7.947524681082198e-08
+    ],
+    [
+     7.947524681082198e-08,
+     0.0,
+     0.9090908893868878
+    ],
+    [
+     0.0,
+     0.9090908893868948,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "foot-of-left-cliff",
+   "asset": "coast_rocks_03",
+   "triangles": 19999,
+   "source_triangles": 44999,
+   "resolution": 1024,
+   "fallback_tangent_corners": 0,
+   "source_normal_basis_columns": [
+    [
+     1.2015771248462908,
+     0.0,
+     -0.34454670169486695
+    ],
+    [
+     -0.344546701694867,
+     0.0,
+     -1.2015771248462908
+    ],
+    [
+     0.0,
+     1.2499999813735487,
+     0.0
+    ]
+   ]
+  }
+ ],
+ "sky": "sky.exr",
+ "water_height": -6.8663129806518555,
+ "exposure": 0.5743491727526943,
+ "source": "Poly Haven CC0 scans",
+ "mode": "Joined scanned contact band; local candidate, no device acceptance",
+ "triangles": 335996,
+ "shared": {
+  "coast_land_rocks_02": {
+   "albedo": {
+    "path": "coast_land_rocks_02-albedo.exr",
+    "resolution": 4096,
+    "encoding": "linear RGB"
+   },
+   "normal": {
+    "path": "coast_land_rocks_02-normal.exr",
+    "resolution": 4096,
+    "encoding": "object normal XYZ in RGB"
+   }
+  },
+  "coast_line_02": {
+   "albedo": {
+    "path": "coast_line_02-albedo.exr",
+    "resolution": 4096,
+    "encoding": "linear RGB"
+   },
+   "normal": {
+    "path": "coast_line_02-normal.exr",
+    "resolution": 4096,
+    "encoding": "object normal XYZ in RGB"
+   }
+  },
+  "coastal_cliff_04": {
+   "albedo": {
+    "path": "coastal_cliff_04-albedo.exr",
+    "resolution": 2048,
+    "encoding": "linear RGB"
+   },
+   "normal": {
+    "path": "coastal_cliff_04-normal.exr",
+    "resolution": 2048,
+    "encoding": "object normal XYZ in RGB"
+   }
+  },
+  "coast_rocks_03": {
+   "albedo": {
+    "path": "coast_rocks_03-albedo.exr",
+    "resolution": 1024,
+    "encoding": "linear RGB"
+   },
+   "normal": {
+    "path": "coast_rocks_03-normal.exr",
+    "resolution": 1024,
+    "encoding": "object normal XYZ in RGB"
+   }
+  }
+ },
+ "total_triangles": 335994,
+ "contact_overlay": {
+  "resolution": 2048,
+  "parts": 4,
+  "source": "https://polyhaven.com/a/rocks_ground_06",
+  "license": "CC0",
+  "runtime_source_mesh": "Preserve interior 4K photographs; overlay only source rim/receiver contact mask"
+ },
+ "contact_lighting": "Edited-band illumination baked against exported low geometry and source object normals; separate BakeCoverage preserves original reflectance attributes; existing high-detail illumination retained outside coverage"
+}

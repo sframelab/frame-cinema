@@ -1,0 +1,70 @@
+{
+  "default_bindings": [
+    {
+      "controller_type": "frame_controller",
+      "binding_url": "bindings_frame.json"
+    }
+  ],
+  "actions": [
+    {
+      "name": "/actions/cinema/in/right_a",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/right_b",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/left_a",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/left_b",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/right_stick",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/left_stick",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/right_grip",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/cinema/in/left_grip",
+      "type": "boolean",
+      "requirement": "optional"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/cinema",
+      "usage": "leftright"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_us",
+      "/actions/cinema": "Cinema shortcuts",
+      "/actions/cinema/in/right_a": "right a",
+      "/actions/cinema/in/right_b": "right b",
+      "/actions/cinema/in/left_a": "left a",
+      "/actions/cinema/in/left_b": "left b",
+      "/actions/cinema/in/right_stick": "right stick",
+      "/actions/cinema/in/left_stick": "left stick",
+      "/actions/cinema/in/right_grip": "right grip",
+      "/actions/cinema/in/left_grip": "left grip"
+    }
+  ]
+}
