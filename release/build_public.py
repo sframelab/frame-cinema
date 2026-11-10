@@ -49,6 +49,8 @@ OVERLAY = {
     'licenses/GODOT-CPP-LICENSE.md': 'licenses/GODOT-CPP-LICENSE.md',
     'licenses/INTER-LICENSE.txt': 'licenses/INTER-LICENSE.txt',
     'licenses/OPENVR-LICENSE.txt': 'licenses/OPENVR-LICENSE.txt',
+    'licenses/GLSLANG-LICENSE.txt': 'licenses/GLSLANG-LICENSE.txt',
+    'licenses/SPIRV-TOOLS-LICENSE.txt': 'licenses/SPIRV-TOOLS-LICENSE.txt',
     'branding/steam/capsule.png': 'art/steam/capsule.png',
     'branding/steam/header.png': 'art/steam/header.png',
     'branding/steam/hero.png': 'art/steam/hero.png',

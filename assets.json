@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "version": "0.5.19",
+ "version": "0.5.20",
  "about": "Room data and prebuilt programs that live in the release download, not in git. Fill them in with: python tools/fetch_assets.py <FrameCinema installer>",
  "files": {
   "app/ambient-contact/room3-contact.res": {
@@ -398,6 +398,24 @@
    "sha256": "3fcb80f4fe794e3859360eb641d8c41d8ffe2c2e54ba1981e55a76851d5ed1f4",
    "exec": true
   },
+  "app/lib/libSPIRV-Tools-opt.so": {
+   "bytes": 2315456,
+   "sha256": "86910fc0c65a68bb47b4f259667498a271a357fe6d121f316f4e5970063a3c67"
+  },
+  "app/lib/libSPIRV-Tools.so": {
+   "bytes": 1839936,
+   "sha256": "ddf5e0ca6302ba8c91c4855a43c0168d00f68016d9d56736229dcc9ee163f892"
+  },
+  "app/lib/libSPIRV.so.14": {
+   "bytes": 3020376,
+   "sha256": "184bdf37cf86b63076e29451b92f87775bffa65c1d548d48a9dd047d55d96aa1",
+   "exec": true
+  },
+  "app/lib/libglslang.so.14": {
+   "bytes": 2496088,
+   "sha256": "212dba5d9f936d28aba4878c33d79545ebeffc4243696448a762d2643d392574",
+   "exec": true
+  },
   "app/lunar/128-lighting.res": {
    "bytes": 5592802,
    "sha256": "a95c327bbea38371b9fee255831e28d825e492a8566022a278cb0fb8a5cc3458"
@@ -505,7 +523,7 @@
   },
   "app/panel_host": {
    "bytes": 7239160,
-   "sha256": "ba011a25cf1f767478288dfdaf3af8959caa5c0477d432c4c9621bacc3ab08e7",
+   "sha256": "bf1e272c3dc0c31159a9955753f1d7727064df18bf328af5f183744151e0b888",
    "exec": true
   },
   "app/pose-sync/libframe_pose_sync.so": {

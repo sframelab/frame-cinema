@@ -43,7 +43,10 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../panel_host.cpp")
   target_include_directories(panel_host PRIVATE ..)
   target_link_directories(panel_host PRIVATE /opt/steamvr/bin/linuxarm64)
   target_link_libraries(panel_host PRIVATE ncnn OpenMP::OpenMP_CXX OpenGL::GL X11 Xcomposite Xtst openvr_api PkgConfig::AT pthread)
-  set_target_properties(panel_host PROPERTIES BUILD_RPATH /opt/steamvr/bin/linuxarm64)
+  # glslang and SPIRV-Tools ship in lib/ beside panel_host, because SteamOS updates change their versions.
+  # An RPATH (not RUNPATH) also covers the libraries those load from each other.
+  set_target_properties(panel_host PROPERTIES BUILD_RPATH "$ORIGIN/lib;/opt/steamvr/bin/linuxarm64")
+  target_link_options(panel_host PRIVATE "LINKER:--disable-new-dtags")
   add_executable(test_live test_live.cpp)
   target_include_directories(test_live PRIVATE ..)
   target_link_directories(test_live PRIVATE /opt/steamvr/bin/linuxarm64)

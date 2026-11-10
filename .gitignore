@@ -4,6 +4,7 @@
 /app/ambient_sampler
 /app/controller_layer
 /app/native-ui/native_ui_renderer
+/app/lib/
 *.so
 /app/coast/**/*.res
 /app/coast/**/*.bin

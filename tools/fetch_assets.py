@@ -6,11 +6,11 @@ records their sizes and SHA-256 hashes. This script verifies each file it copies
 into app/. Existing files are checked by size; add --verify to check their hashes.
 
 The source can be:
-  - an installer:        FrameCinema-0.5.19-installer.sh
-  - its archive:         frame-cinema-0.5.19-linux-arm64.tar.gz
-  - an installed copy:   ~/.local/share/frame-cinema/app/versions/0.5.19  (on a Steam Frame)
+  - an installer:        FrameCinema-0.5.20-installer.sh
+  - its archive:         frame-cinema-0.5.20-linux-arm64.tar.gz
+  - an installed copy:   ~/.local/share/frame-cinema/app/versions/0.5.20  (on a Steam Frame)
 
-    python tools/fetch_assets.py FrameCinema-0.5.19-installer.sh
+    python tools/fetch_assets.py FrameCinema-0.5.20-installer.sh
     python tools/fetch_assets.py --check          # only list what is missing
 
 An older release supplies matching files and reports the rest as missing or

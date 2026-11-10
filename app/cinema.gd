@@ -1436,7 +1436,7 @@ func _write_report() -> void:
 		controller_status.append({"hand": controller.tracker, "active": controller.get_is_active(),
 			"tracked": controller.get_has_tracking_data(), "profile": tracker.get_tracker_profile() if tracker else ""})
 	var xr := XRServer.find_interface("OpenXR")
-	var report := {"version": "0.5.19", "engine": Engine.get_version_info().string,
+	var report := {"version": "0.5.20", "engine": Engine.get_version_info().string,
 			"os": OS.get_name(), "xr_active": xr_active, "frames": Engine.get_frames_drawn(),
 			"session_state": xr.get_session_state() if xr_active else 0,
 			"controllers": controller_status, "input_counts": input_counts, "button_actions": button_actions,

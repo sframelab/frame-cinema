@@ -1,6 +1,6 @@
 # Third-party notices and credits
 
-Sources, credits and license terms for Frame Cinema 0.5.19. This file also
+Sources, credits and license terms for Frame Cinema 0.5.20. This file also
 ships with the app as `THIRD-PARTY-NOTICES.md`. License texts are in
 `release/licenses/` in the repository, `licenses/` in the installed app, and
 beside the components listed below.
@@ -17,6 +17,8 @@ are under the MIT License in `LICENSE`, except the files listed under
 | [godot-cpp](https://github.com/godotengine/godot-cpp) | Compiled into the four Godot extensions | MIT, Copyright (c) 2017-present Godot Engine contributors. `release/licenses/GODOT-CPP-LICENSE.md` |
 | [OpenVR SDK](https://github.com/ValveSoftware/openvr) header (`app/openvr.h`) | `panel_host` and the menu helper talk to SteamVR | BSD 3-Clause, Copyright (c) 2015, Valve Corporation. `release/licenses/OPENVR-LICENSE.txt` |
 | [ncnn](https://github.com/Tencent/ncnn) | Runs the depth model for the 2D-to-3D mode | BSD 3-Clause, Copyright (C) 2017 Tencent. `app/stereo/NCNN-LICENSE.txt` |
+| [glslang](https://github.com/KhronosGroup/glslang) 14.0.0 (`app/lib/libglslang.so.14`, `app/lib/libSPIRV.so.14`) | ncnn compiles its 2D-to-3D shaders with it. Copied from SteamOS's package so the app doesn't depend on the system's version | BSD 3-Clause and other permissive terms, listed in `release/licenses/GLSLANG-LICENSE.txt` |
+| [SPIRV-Tools](https://github.com/KhronosGroup/SPIRV-Tools) 1.4.309 (`app/lib/libSPIRV-Tools.so`, `app/lib/libSPIRV-Tools-opt.so`) | Used by glslang. Copied from SteamOS's package | Apache License 2.0, The Khronos Group Inc. and contributors. `release/licenses/SPIRV-TOOLS-LICENSE.txt` |
 | [ZipDepth](https://github.com/fabiotosi92/ZipDepth) model (`app/stereo/model/`) | Estimates depth for the 2D-to-3D mode | MIT, Copyright (c) 2026 Fabio Tosi. `app/stereo/model/ZIPDEPTH-LICENSE.txt`. It was distilled from Depth Anything V2 Large, whose weights are under CC BY-NC 4.0, so the 3D mode is for non-commercial use only |
 | [Inter](https://github.com/rsms/inter) (`app/InterVariable.ttf`) | The interface font | SIL Open Font License 1.1, Copyright (c) 2016 The Inter Project Authors. No Reserved Font Name. `release/licenses/INTER-LICENSE.txt` |
 
@@ -83,8 +85,7 @@ ZipDepth above.
 
 Google Chrome and its Widevine video DRM are installed by the user and are under
 Google's terms. SteamVR, Gamescope and SteamOS's system libraries are used from
-the headset and are not redistributed. That includes glslang and SPIRV-Tools,
-which ncnn loads from SteamOS.
+the headset and are not redistributed.
 
 ## Trademarks
 

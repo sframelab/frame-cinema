@@ -19,7 +19,7 @@ and browser support. Frame Cinema is an independent app.
 
 ## Install
 
-1. In Desktop Mode, download `FrameCinema-0.5.19-installer.sh` and
+1. In Desktop Mode, download `FrameCinema-0.5.20-installer.sh` and
    `Install Frame Cinema.desktop` into the same folder.
 2. Double-click **Install Frame Cinema** and choose **Continue**. A terminal
    shows progress while the installer checks requirements, prepares resources
@@ -29,7 +29,7 @@ and browser support. Frame Cinema is an independent app.
    in your library, not with your Steam games.
 
 You can also install from a terminal with
-`sh FrameCinema-0.5.19-installer.sh`. The app installs in
+`sh FrameCinema-0.5.20-installer.sh`. The app installs in
 `~/.local/share/frame-cinema/app` without an administrator password.
 Updates keep your settings, sign-ins and the previous version.
 

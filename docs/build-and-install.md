@@ -30,14 +30,14 @@ download. [`assets.json`](../assets.json) records their sizes and SHA-256 hashes
 Fetch them with:
 
 ```sh
-python3 tools/fetch_assets.py FrameCinema-0.5.19-installer.sh
+python3 tools/fetch_assets.py FrameCinema-0.5.20-installer.sh
 ```
 
 The source can be the installer from the
 [Releases page](https://github.com/sframelab/frame-cinema/releases), a locally built `.tar.gz`, or, on a headset that already has this version installed, the installed copy:
 
 ```sh
-python3 tools/fetch_assets.py ~/.local/share/frame-cinema/app/versions/0.5.19
+python3 tools/fetch_assets.py ~/.local/share/frame-cinema/app/versions/0.5.20
 ```
 
 `python3 tools/fetch_assets.py --check` reports missing files or size mismatches.
@@ -56,7 +56,7 @@ What comes from the release:
 
 Reinstalling the same version repairs its files and Steam library entry. Before
 building a modified version, raise `"version"` near the top of `app/cinema.gd`, for example from
-`0.5.19` to `0.5.19-mine.1`. The menu shows this number.
+`0.5.20` to `0.5.20-mine.1`. The menu shows this number.
 
 ## 3. Build on the headset
 
@@ -137,6 +137,7 @@ using `g++`, `cmake` and SteamVR's `libopenvr_api.so` in
 | `native-ui/libframe_native_ui.so` | `app/native-ui/frame_native_ui.cpp` | A Godot extension: `g++ -std=c++17 -O2 -fPIC -shared` against [godot-cpp](https://github.com/godotengine/godot-cpp) at commit `27d9dd23c83871e0619fca5dc2cddfbfd69e926a`, with `-DGDEXTENSION -DLINUX_ENABLED -DTHREADS_ENABLED -DUNIX_ENABLED -DXR_USE_TIMESPEC`, linking `libgodot-cpp.linux.template_release.arm64.a -lopenvr_api -ldl -pthread` |
 | `pose-sync/libframe_pose_sync.so`, `water-sync/libframe_water_sync.so` | `native/pose-sync/`, `native/water-sync/` | CMake against the same godot-cpp: `cmake -S native/pose-sync -B build -DGODOT_CPP_DIR=<godot-cpp> -DGODOTCPP_CUSTOM_API_FILE=<extension_api.json> -DCMAKE_BUILD_TYPE=Release` |
 | `scene-owner/libframe_scene_owner_broker.so` | `app/scene-owner/frame_scene_owner_broker.cpp` | A Godot extension, built the same way as `libframe_native_ui.so` |
+| `lib/` | SteamOS's glslang 14.0.0 and SPIRV-Tools 1.4.309 packages | Copied from `/usr/lib` by the release build. `panel_host` is linked with `-Wl,--disable-new-dtags` and an RPATH of `$ORIGIN/lib`, so it loads these copies on any SteamOS version |
 | `controller_layer` | `app/controller_layer_candidate.cpp` | A test program for drawing the controllers in 3D, linked against OpenVR, EGL and GLES 3. It ships, but the app doesn't start it |
 
 `extension_api.json` comes from the engine itself: `./godot --headless --dump-extension-api`.
