@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "version": "0.5.20",
+ "version": "0.5.21",
  "about": "Room data and prebuilt programs that live in the release download, not in git. Fill them in with: python tools/fetch_assets.py <FrameCinema installer>",
  "files": {
   "app/ambient-contact/room3-contact.res": {

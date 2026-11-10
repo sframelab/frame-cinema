@@ -419,30 +419,61 @@ def steam_running():
     return bool(steam_pids())
 
 
+def steam_units(pids, proc=Path('/proc')):
+    """The systemd units the Steam clients run in: steam.service in Gaming Mode,
+    app-steam@autostart.service when Plasma started it in Desktop Mode, or a scope
+    when someone opened it from a menu or a terminal."""
+    units = set()
+    for pid in pids:
+        try:
+            lines = (proc / str(pid) / 'cgroup').read_text().splitlines()
+        except OSError:
+            continue
+        for line in lines:
+            names = [name for name in line.split(':', 2)[-1].split('/') if name.endswith(('.service', '.scope'))]
+            if names:
+                units.add(names[-1])
+    return units
+
+
 def steam_stop(purpose='add Frame Cinema to'):
     """Ask the running Steam client to exit; it saves shortcuts.vdf as it closes.
 
-    Steam Frame's session starts a new client immediately, so wait only for the
-    old process to end and write before the new client loads its library."""
+    Gaming Mode starts a new client immediately, so wait only for the old process
+    to end and write before the new client loads its library. Returns the units
+    Steam ran in, or None if it was not running."""
     old = steam_pids()
     if not old:
-        return False
+        return None
+    units = steam_units(old)
     print(f'Restarting Steam to {purpose} your library...', flush=True)
     subprocess.run(['steam', '-shutdown'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=30, check=False)
     for _ in range(900):
         if not old & steam_pids():
-            return True
+            return units
         time.sleep(0.1)
     raise ValueError('Steam did not close. Restart the headset, then run the installer again.')
 
 
-def steam_start():
-    # Steam Frame and Game Mode restart Steam by themselves; start it only if nothing did.
+def steam_start(units):
+    """Start Steam again through the unit it ran in, never as a child of the installer.
+
+    A client started from here stays alive after a switch to Gaming Mode. SteamOS's
+    own Steam then quits at once because one is already open, five times, and
+    SteamOS resets the Steam install and stops trying."""
     for _ in range(80):
-        if steam_running():
-            return
+        if steam_running():  # Gaming Mode's steam.service restarts by itself
+            return True
         time.sleep(0.1)
-    subprocess.Popen(['steam'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+    started = False
+    for unit in sorted(units):
+        if unit == 'steam.service' or (unit.startswith('app-steam') and unit.endswith('.service')):
+            result = subprocess.run(['systemctl', '--user', 'start', '--no-block', unit], stdout=subprocess.DEVNULL,
+                                    stderr=subprocess.DEVNULL, timeout=30, check=False)
+            started = started or result.returncode == 0
+    if not started:
+        print('Steam was closed to update your library. Open Steam again to see Frame Cinema.', flush=True)
+    return started
 
 def steam_entries(shortcuts, exe):
     return [key for key, item in shortcuts.items() if isinstance(item, dict) and item.get('Exe') == exe]
@@ -481,7 +512,8 @@ def register_steam(root, art):
         raise ValueError('No Steam user found on this device. Start Steam once, then install again.')
     exe = '"' + str(root / 'launch') + '"'
     appid = steam_shortcut_id(exe)
-    stopped = steam_stop()
+    units = steam_stop()
+    restarted = False
     try:
         icon = root / 'steam-icon.png'
         shutil.copyfile(art / 'icon.png', icon)
@@ -508,9 +540,9 @@ def register_steam(root, art):
                 shutil.copyfile(art / source, grid / pattern.format(id=appid))
         atomic(safe_path(root, 'steam.json'), json.dumps({'appid': appid, 'exe': exe, 'users': [str(u) for u in users]}) + '\n')
     finally:
-        if stopped:
-            steam_start()
-    return {'steam_appid': appid, 'steam_users': len(users), 'steam_restarted': stopped}
+        if units is not None:
+            restarted = steam_start(units)
+    return {'steam_appid': appid, 'steam_users': len(users), 'steam_restarted': restarted}
 
 
 def unregister_steam(root):
@@ -518,7 +550,7 @@ def unregister_steam(root):
     if not record.exists():
         return False
     info = json.loads(record.read_text())
-    stopped = steam_stop('remove Frame Cinema from')
+    units = steam_stop('remove Frame Cinema from')
     try:
         for user in info.get('users', []):
             config = Path(user) / 'config'
@@ -535,8 +567,8 @@ def unregister_steam(root):
         record.unlink()
         safe_path(root, 'steam-icon.png').unlink(missing_ok=True)
     finally:
-        if stopped:
-            steam_start()
+        if units is not None:
+            steam_start(units)
     return True
 
 

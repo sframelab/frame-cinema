@@ -22,7 +22,7 @@ on the headset between sessions.
 
 These images are renders from the app.
 
-This is version 0.5.20. It runs at 72 Hz on SteamOS ARM64. Picture quality
+This is version 0.5.21. It runs at 72 Hz on SteamOS ARM64. Picture quality
 depends on the service, your subscription and what the service offers in a Linux
 browser. Frame Cinema is independent and isn't affiliated with Valve or the
 streaming services.
@@ -30,7 +30,7 @@ streaming services.
 ## Install
 
 1. In Desktop Mode, install the **Google Chrome ARM64 Flatpak** from Discover.
-2. Download `FrameCinema-0.5.20-installer.sh` and
+2. Download `FrameCinema-0.5.21-installer.sh` and
    `Install Frame Cinema.desktop` from the
    [Releases page](https://github.com/sframelab/frame-cinema/releases) or
    [itch.io](https://sframelab.itch.io/frame-cinema). Keep both files in the
@@ -52,7 +52,7 @@ and prebuilt native helpers come from the release download:
 ```sh
 git clone https://github.com/sframelab/frame-cinema.git
 cd frame-cinema
-python3 tools/fetch_assets.py FrameCinema-0.5.20-installer.sh
+python3 tools/fetch_assets.py FrameCinema-0.5.21-installer.sh
 python3 tools/build_on_frame.py          # run on the headset in Desktop Mode
 ```
 

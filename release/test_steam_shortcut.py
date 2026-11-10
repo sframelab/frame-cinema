@@ -118,11 +118,62 @@ class SteamShortcutTest(unittest.TestCase):
         data = install.vdf_load((self.config / 'shortcuts.vdf').read_bytes())
         self.assertEqual([item['AppName'] for item in data['shortcuts'].values()], ['Frame Cinema'])
 
+    def test_register_restarts_steam_in_the_unit_it_ran_in(self):
+        self.assertFalse(install.register_steam(self.root, self.art)['steam_restarted'])  # Steam was closed
+        with mock.patch.object(install, 'steam_stop', return_value={'app-steam@autostart.service'}), \
+             mock.patch.object(install, 'steam_start', return_value=True) as start:
+            result = install.register_steam(self.root, self.art)
+        start.assert_called_once_with({'app-steam@autostart.service'})
+        self.assertTrue(result['steam_restarted'])
+
     def test_no_steam_user_is_an_error(self):
         for user in (self.home / '.local/share/Steam/userdata').iterdir():
             os.rename(user, self.home / 'moved')
         with self.assertRaises(ValueError):
             install.register_steam(self.root, self.art)
+
+
+class SteamRestartTest(unittest.TestCase):
+    """Steam comes back through the unit it ran in, never as the installer's child."""
+
+    def units(self, cgroups):
+        with tempfile.TemporaryDirectory() as temp:
+            proc = Path(temp)
+            for pid, text in cgroups.items():
+                (proc / str(pid)).mkdir()
+                (proc / str(pid) / 'cgroup').write_text(text)
+            return install.steam_units(set(cgroups) | {999}, proc)
+
+    def test_units_come_from_the_cgroup(self):
+        self.assertEqual(self.units({
+            10: '0::/user.slice/user-1000.slice/user@1000.service/session.slice/steam.service\n',
+            11: '0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-steam@autostart.service\n',
+            12: '0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-4242.scope\n'}),
+            {'steam.service', 'app-steam@autostart.service', 'app-org.kde.konsole-4242.scope'})
+
+    def start(self, units, running=False):
+        calls = []
+        def run(args, **_):
+            calls.append(args)
+            return mock.Mock(returncode=0)
+        with mock.patch.object(install, 'steam_running', return_value=running), \
+             mock.patch.object(install.time, 'sleep'), \
+             mock.patch.object(install.subprocess, 'run', side_effect=run), \
+             mock.patch.object(install.subprocess, 'Popen', side_effect=AssertionError('Steam started as a child')):
+            return install.steam_start(units), calls
+
+    def test_gaming_mode_steam_restarts_by_itself(self):
+        self.assertEqual(self.start({'steam.service'}, running=True), (True, []))
+
+    def test_desktop_mode_steam_starts_through_its_unit(self):
+        started, calls = self.start({'app-steam@autostart.service'})
+        self.assertTrue(started)
+        self.assertEqual(calls, [['systemctl', '--user', 'start', '--no-block', 'app-steam@autostart.service']])
+
+    def test_steam_from_a_terminal_is_left_closed(self):
+        started, calls = self.start({'app-org.kde.konsole-4242.scope', 'konsole.service'})
+        self.assertFalse(started)
+        self.assertEqual(calls, [])
 
 
 class DesktopAndDataTest(SteamShortcutTest):

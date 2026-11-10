@@ -30,14 +30,14 @@ download. [`assets.json`](../assets.json) records their sizes and SHA-256 hashes
 Fetch them with:
 
 ```sh
-python3 tools/fetch_assets.py FrameCinema-0.5.20-installer.sh
+python3 tools/fetch_assets.py FrameCinema-0.5.21-installer.sh
 ```
 
 The source can be the installer from the
 [Releases page](https://github.com/sframelab/frame-cinema/releases), a locally built `.tar.gz`, or, on a headset that already has this version installed, the installed copy:
 
 ```sh
-python3 tools/fetch_assets.py ~/.local/share/frame-cinema/app/versions/0.5.20
+python3 tools/fetch_assets.py ~/.local/share/frame-cinema/app/versions/0.5.21
 ```
 
 `python3 tools/fetch_assets.py --check` reports missing files or size mismatches.
@@ -56,7 +56,7 @@ What comes from the release:
 
 Reinstalling the same version repairs its files and Steam library entry. Before
 building a modified version, raise `"version"` near the top of `app/cinema.gd`, for example from
-`0.5.20` to `0.5.20-mine.1`. The menu shows this number.
+`0.5.21` to `0.5.21-mine.1`. The menu shows this number.
 
 ## 3. Build on the headset
 

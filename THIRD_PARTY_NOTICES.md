@@ -1,6 +1,6 @@
 # Third-party notices and credits
 
-Sources, credits and license terms for Frame Cinema 0.5.20. This file also
+Sources, credits and license terms for Frame Cinema 0.5.21. This file also
 ships with the app as `THIRD-PARTY-NOTICES.md`. License texts are in
 `release/licenses/` in the repository, `licenses/` in the installed app, and
 beside the components listed below.
